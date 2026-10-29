@@ -1,0 +1,218 @@
+/* Acabamentos · landing (desde 19/10/2026), a partir do prototypes/acabamentos-03 · ref.: Isra Design (seção ".trigger-img-switch")
+   Na paleta e na Inter Tight da Nazzan. Valores da Isra, adaptados:
+   - fileiras de fotos de 40vw (546/1366), 16:9, com 1,2vw entre elas; a de cima corre −30% e a de baixo
+     +30% (xPercent), a do meio fica parada;
+   - véu escuro (rgba .45 → aqui grafite .42) com backdrop-filter de 10px → 0;
+   - frases que sobem letra a letra (yPercent 105 → 0, stagger .03) e saem para cima;
+   - a foto do centro cresce até 100vw × 100vh; depois as fileiras somem (autoAlpha 1 → 0 em .5);
+   - painéis de tela cheia que sobem (y 100vh → 0) enquanto a foto de dentro desce (−100vh → 0);
+   - painel: coluna larga à esquerda (nome em cima, contador embaixo), quadrado claro no centro
+     (aqui, a amostra do material) e coluna estreita à direita (texto). */
+.a3 { padding-top: 0; color: var(--txt-forte); }
+/* Só o palco é verde; depois dele a seção fica no creme da página, como as outras */
+.a3__veu .rotulo, .a3__bast-painel .rotulo { color: var(--creme-60); }
+.a3__veu .rotulo span { color: var(--ouro); }
+
+/* ---------- Palco preso ---------- */
+.a3__trilho { position: relative; height: 880vh; height: 880svh; }
+.a3__palco { position: sticky; top: 0; height: 100vh; height: 100svh; overflow: hidden; background: var(--verde); }
+
+/* Fileiras */
+.a3__galeria { position: absolute; inset: 0; z-index: 1; display: flex; flex-direction: column; justify-content: center; gap: 1.2vw; will-change: opacity; }
+.a3__fila { display: flex; gap: 1.2vw; flex: none; will-change: transform; }
+.a3__fila--cima { transform: translate3d(calc(var(--x, 0) * 1%), 0, 0); }
+.a3__fila--baixo { margin-left: -63vw; transform: translate3d(calc(var(--x, 0) * 1%), 0, 0); }
+.a3__fila--meio { justify-content: center; }
+.a3__img { flex: none; width: 40vw; aspect-ratio: 16 / 9; margin: 0; overflow: hidden; border-radius: 2px; background: rgba(253, 249, 244, .06); opacity: var(--o, 1); }
+.a3__img img { width: 100%; height: 100%; object-fit: cover; }
+.a3__vaga { background: none; }
+/* A foto do centro, que cresce até a tela inteira (o JS dá --zw e --zh em px) */
+.a3__zoom { position: absolute; left: 50%; top: 50%; z-index: 2; width: var(--zw, 40vw); height: var(--zh, 22.5vw); margin: 0; overflow: hidden; border-radius: 2px; transform: translate(-50%, -50%); }
+.a3__zoom img { width: 100%; height: 100%; object-fit: cover; }
+
+/* Véu com as frases */
+.a3__veu { position: absolute; inset: 0; z-index: 3; display: grid; place-items: center; padding: 0 var(--g); background: rgba(28, 28, 28, .42); -webkit-backdrop-filter: blur(var(--blur, 10px)); backdrop-filter: blur(var(--blur, 10px)); text-align: center; color: var(--creme); will-change: opacity; }
+.a3__frase { position: relative; font-size: clamp(38px, 4.2vw, 68px); font-weight: 400; line-height: 1.08; letter-spacing: -.035em; color: var(--creme); }
+.a3__f { display: block; overflow: clip; padding-bottom: .1em; margin-bottom: -.1em; }
+.a3__f + .a3__f { position: absolute; inset: 0; }
+.a3__w { display: inline-block; white-space: nowrap; }
+.a3__c { display: inline-block; transform: translate3d(0, var(--y, 105%), 0); will-change: transform; }
+/* Dica de rolagem (do Codex): pequena, no pé do palco, centrada; some quando a rolagem começa */
+.a3__dica {
+  position: absolute; left: 50%; bottom: clamp(24px, 5vh, 44px); transform: translateX(-50%);
+  display: inline-flex; align-items: center; gap: 10px; white-space: nowrap;
+  font-size: 11px; font-weight: 500; letter-spacing: .14em; text-transform: uppercase; color: rgba(253, 249, 244, .75);
+  opacity: var(--d, 1);
+}
+.a3__dica span { display: inline-block; font-size: 14px; letter-spacing: 0; animation: a3-dica 2.4s var(--ease) infinite; }
+@keyframes a3-dica { 0%, 100% { transform: translateY(-2px); opacity: .6; } 50% { transform: translateY(3px); opacity: 1; } }
+.a3__apoio { position: absolute; left: 50%; bottom: clamp(48px, 10vh, 96px); width: min(34ch, calc(100% - 2 * var(--g))); transform: translate(-50%, calc((1 - var(--a, 0)) * 16px)); font-size: 16px; line-height: 1.55; color: rgba(253, 249, 244, .78); opacity: var(--a, 0); }
+
+/* Painéis dos materiais */
+.a3__paineis { position: absolute; inset: 0; z-index: 0; }
+/* Só o fundo recebe o recorte lateral. A foto vai de 1,12 a 1,0 de escala;
+   os cards ficam em uma camada acima das quatro fotos. */
+.a3__painel { position: absolute; inset: 0; overflow: hidden; }
+.a3__painel:not(:first-child) .a3__painel-fundo { clip-path: inset(0 0 0 100%); }
+.a3__painel-fundo { position: absolute; inset: 0; overflow: hidden; will-change: clip-path; }
+.a3__painel-fundo img { width: 100%; height: 100%; object-fit: cover; will-change: transform; }
+/* Foto limpa: só uma sombra bem leve no pé, para o cartão não "flutuar" sobre um branco estourado */
+.a3__painel-fundo::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(28, 28, 28, 0) 70%, rgba(28, 28, 28, .16)); }
+/* Conteúdo: um só cartão de vidro embaixo à DIREITA, na mesma posição e no mesmo vidro da ficha de
+   Ambientes (a 5vw da borda e 48px da base, como .amb__ficha). O véu do vidro é um pouco mais denso (.72),
+   para o cartão ter o mesmo tom escuro da referência mesmo sobre as partes claras das fotos. Dentro:
+   rótulo e contador sobre um filete; embaixo, a amostra do material e o nome e o texto. */
+.a3__painel-conteudo {
+  position: absolute; inset: 0; z-index: 2;
+  visibility: hidden; opacity: 0; pointer-events: none;
+  transition: opacity 200ms var(--ease), visibility 200ms;
+  display: flex; align-items: flex-end; justify-content: flex-end;
+  padding: 0 clamp(24px, 5vw, 72px) 48px;
+  transform: translate3d(0, calc((1 - var(--c, 0)) * 24px), 0);
+}
+.a3__painel-conteudo.is-atual { visibility: visible; opacity: 1; }
+.a3__palco.is-troca-direta .a3__painel-conteudo { transition: none; }
+/* O esmaecimento fica só no conteúdo de dentro: com opacidade abaixo de 1 num ancestral, o navegador
+   não aplica o backdrop-filter, e o vidro ficava claro enquanto o painel chegava. O vidro fica sempre inteiro. */
+.a3__cartao > * { opacity: var(--c, 0); }
+.a3__cartao {
+  width: min(100%, 420px); padding: 24px;
+  border: 1px solid rgba(253, 249, 244, .25); border-radius: 12px;
+  background: rgba(28, 28, 28, .93); box-shadow: 0 12px 40px rgba(0, 0, 0, .13);
+  color: var(--creme);
+}
+@supports ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+  .a3__cartao { background: linear-gradient(135deg, rgba(253, 249, 244, .06), rgba(28, 28, 28, .08)), rgba(28, 28, 28, .72); -webkit-backdrop-filter: blur(20px); backdrop-filter: blur(20px); }
+}
+.a3__cartao-topo { display: flex; align-items: center; justify-content: space-between; gap: 20px; margin-bottom: 16px; }
+/* Linha de progresso pelos quatro materiais (Springs: 1,5px a 20%, com a barra que cresce) */
+.a3__progresso { position: relative; display: block; height: 1.5px; margin-bottom: 20px; overflow: hidden; background: rgba(253, 249, 244, .2); }
+.a3__progresso i { position: absolute; inset: 0; background: var(--creme); transform: scaleX(0); transform-origin: left; }
+/* Tipografia igual à ficha de Ambientes: rótulo 9px, contador 11px, nome 32px, texto 14px */
+.a3 .a3__painel-rot { font-size: 9px; font-weight: 500; letter-spacing: .12em; color: rgba(253, 249, 244, .7); }
+.a3__contador { font-size: 11px; color: var(--creme); font-variant-numeric: tabular-nums; white-space: nowrap; }
+.a3__contador span { color: var(--creme); }
+.a3__cartao-corpo { display: grid; grid-template-columns: 104px minmax(0, 1fr); align-items: end; gap: 20px; }
+.a3__amostra { margin: 0; overflow: hidden; border: 1px solid rgba(253, 249, 244, .25); border-radius: 8px; }
+.a3__amostra img { display: block; width: 100%; aspect-ratio: 1; object-fit: cover; }
+.a3__painel-nome { font-size: 32px; font-weight: 400; line-height: 1.1; letter-spacing: -.03em; color: var(--creme); }
+.a3__painel-desc { margin-top: 10px; font-size: 14px; line-height: 1.5; color: rgba(253, 249, 244, .8); }
+
+/* ---------- Revelação dos blocos de baixo ---------- */
+.js [data-a3-sobe] { opacity: 0; transform: translate3d(0, 40px, 0); transition: opacity .9s var(--ease), transform .9s var(--ease); }
+.js [data-a3-sobe].is-dentro { opacity: 1; transform: none; }
+
+/* ---------- O que definimos com você ----------
+   Usa o bloco preso da landing (pr__* e pj__pino do styles.css), sem regras próprias aqui. */
+
+/* ---------- Bastidores ---------- */
+.a3__bast { margin-top: clamp(96px, 10vw, 152px); }
+/* Painel verde com o degradê vivo do fecho de Projetos (mf__fecho-fundo do styles.css) e o filete no topo */
+.a3__bast-painel {
+  grid-column: 1 / -1; position: relative; isolation: isolate; overflow: hidden;
+  display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: end; gap: 40px 48px;
+  padding: clamp(48px, 6.5vw, 104px) clamp(28px, 5.5vw, 88px);
+  border-radius: 4px; background: var(--verde); color: var(--creme);
+}
+.a3__bast-painel::after { content: ""; position: absolute; left: clamp(28px, 5.5vw, 88px); right: clamp(28px, 5.5vw, 88px); top: clamp(24px, 3vw, 44px); height: 1px; background: rgba(253, 249, 244, .16); }
+.a3__bast-frase { max-width: 20ch; font-size: clamp(32px, 4vw, 64px); line-height: 1.03; letter-spacing: -.04em; color: var(--creme); text-wrap: balance; }
+.a3__bast-frase span { color: rgba(253, 249, 244, .5); }
+.a3__bast-lado { display: grid; justify-items: end; gap: 20px; }
+/* Link do Instagram (do Codex): discreto, com sublinhado que cresce no hover */
+
+
+/* Botão da Isra: o círculo dourado cresce até cobrir a pílula, e a seta troca */
+.a3__botao { position: relative; isolation: isolate; overflow: hidden; display: inline-flex; align-items: center; gap: 24px; padding: 8px 8px 8px 24px; border: 1px solid rgba(253, 249, 244, .28); border-radius: 50px; font-size: 14px; color: var(--creme); white-space: nowrap; transition: color .3s var(--ease) .05s; }
+.a3__botao-fundo { position: absolute; z-index: -1; top: 7px; bottom: 7px; right: 7px; width: 44px; border-radius: 50px; background: var(--ouro); transition: width .45s var(--ease); }
+.a3__botao-txt { position: relative; }
+.a3__botao-ico { position: relative; display: grid; place-items: center; width: 42px; height: 42px; overflow: hidden; color: var(--grafite); }
+.a3__botao-ico svg { grid-area: 1 / 1; width: 14px; height: 14px; transition: transform .45s var(--ease), opacity .45s var(--ease); }
+.a3__seta-2 { transform: translate3d(-22px, 0, 0); opacity: 0; }
+.a3__botao:focus-visible { outline: 1px solid var(--creme); outline-offset: 4px; }
+@media (hover: hover) and (pointer: fine) {
+  .a3__botao:hover { color: var(--grafite); }
+  .a3__botao:hover .a3__botao-fundo { width: calc(100% - 14px); }
+  .a3__botao:hover .a3__seta-1 { transform: translate3d(22px, 0, 0); opacity: 0; }
+  .a3__botao:hover .a3__seta-2 { transform: none; opacity: 1; }
+}
+
+/* ---------- Versão sem palco: celular, sem JS e com movimento reduzido ---------- */
+:root:not(.js) .a3__trilho, .a3--estatico .a3__trilho { height: auto; }
+:root:not(.js) .a3__palco, .a3--estatico .a3__palco { position: static; height: auto; overflow: visible; background: none; }
+:root:not(.js) .a3__galeria, .a3--estatico .a3__galeria { display: none; }
+:root:not(.js) .a3__veu, .a3--estatico .a3__veu { position: static; display: block; padding: clamp(72px, 10vw, 120px) var(--g) clamp(40px, 6vw, 64px); background: none; -webkit-backdrop-filter: none; backdrop-filter: none; text-align: left; }
+:root:not(.js) .a3__dica, .a3--estatico .a3__dica { display: none; }
+:root:not(.js) .a3__veu > *, .a3--estatico .a3__veu > * { width: 100%; justify-self: stretch; text-align: left; }
+:root:not(.js) .a3__f + .a3__f, .a3--estatico .a3__f + .a3__f { position: static; }
+:root:not(.js) .a3__c, .a3--estatico .a3__c { transform: none; }
+:root:not(.js) .a3__apoio, .a3--estatico .a3__apoio { position: static; width: auto; max-width: 34ch; margin-top: 20px; transform: none; opacity: 1; }
+:root:not(.js) .a3__paineis, .a3--estatico .a3__paineis { position: static; display: grid; gap: 16px; padding: 0 var(--g); }
+:root:not(.js) .a3__painel, .a3--estatico .a3__painel { position: relative; inset: auto; min-height: min(640px, 92svh); border-radius: 4px; transform: none; clip-path: none !important; }
+:root:not(.js) .a3__painel-fundo, .a3--estatico .a3__painel-fundo { transform: none; clip-path: none !important; }
+:root:not(.js) .a3__progresso, .a3--estatico .a3__progresso { display: none; }
+:root:not(.js) .a3__painel-conteudo, .a3--estatico .a3__painel-conteudo { --c: 1 !important; visibility: visible; opacity: 1; transform: none; transition: none; }
+@media (max-width: 900px) {
+  /* Celular: o cartão na largura toda, a 20px das bordas, com a amostra menor */
+  .a3__painel-conteudo { padding: 0 20px 20px; }
+  .a3__cartao { width: 100%; padding: 18px; }
+  .a3__cartao-corpo { grid-template-columns: 88px minmax(0, 1fr); gap: 16px; }
+  .a3__painel-nome { font-size: 28px; }
+  .a3__bast-painel { grid-template-columns: 1fr; gap: 32px; padding: 64px 24px 28px; }
+  .a3__bast-painel::after { left: 24px; right: 24px; top: 24px; }
+  .a3__bast-lado { justify-items: start; }
+}
+@media (max-width: 720px) {
+  /* Palco no celular: fotos mais largas nas fileiras, para a passagem ter a mesma força */
+  .a3__galeria, .a3__fila { gap: 2.4vw; }
+  .a3__img { width: 64vw; }
+  .a3__fila--baixo { margin-left: -100vw; }
+  .a3__zoom { width: var(--zw, 64vw); height: var(--zh, 36vw); }
+  .a3__frase { font-size: clamp(32px, 9vw, 44px); }
+  .a3__botao { gap: 14px; padding-left: 20px; white-space: normal; }
+}
+/* ---------- Celular com a trava (22/10/2026, protótipo prototypes/amb-acab-mobile-b.html) ----------
+   Sem a abertura (fileiras, letras e zoom): o título fica parado no verde, em duas cores, e os quatro
+   materiais vêm em cartões que se empilham, presos (100lvh), um gesto por cartão (trava.js). O palco vira
+   o trilho: título, painéis presos e o ::after de 60svh por cartão seguinte. Cartões, ficha e medidas
+   iguais aos de Ambientes no celular (ambientes.css). A pedido do usuário, tudo no creme, como as outras seções:
+   título em grafite com a segunda linha apagada (a mesma dos títulos pr__) e o apoio no cinza suave. */
+@media (max-width: 720px) {
+  .a3--celular .a3__trilho { height: auto; }
+  .a3--celular .a3__palco { position: relative; height: auto; overflow: visible; background: var(--creme); }
+  .a3--celular .a3__palco::after { content: ""; display: block; height: calc((4 - 1) * 60vh); height: calc((4 - 1) * 60svh); }
+  .a3--celular .a3__galeria, .a3--celular .a3__dica, .a3--celular .a3__palco > .a3__progresso { display: none; }
+  .a3--celular .a3__veu { position: static; display: block; place-items: normal; padding: 72px var(--g) 40px; background: none; -webkit-backdrop-filter: none; backdrop-filter: none; text-align: left; will-change: auto; }
+  .a3--celular .a3__frase { font-size: 36px; line-height: 1.02; letter-spacing: -.04em; color: var(--grafite); }
+  .a3--celular .a3__f + .a3__f { position: static; color: rgba(28, 28, 28, .32); }
+  .a3--celular .a3__c { transform: none; will-change: auto; }
+  .a3--celular .a3__apoio { position: static; width: auto; max-width: 30ch; margin-top: 16px; transform: none; opacity: 1; font-size: 15px; color: var(--txt-suave); }
+  .a3--celular .a3__paineis { position: sticky; inset: auto; top: 0; height: 100vh; height: 100lvh; overflow: hidden; }
+  .a3--celular .a3__painel {
+    inset: auto; left: 16px; right: 16px;
+    top: calc(16px + var(--i, 0) * 8px);
+    height: calc(100vh - 32px - (4 - 1) * 8px);
+    height: calc(100svh - 32px - (4 - 1) * 8px);
+    border-radius: 10px; background: #EFE7DB;
+    box-shadow: 0 -10px 30px rgba(28, 28, 28, .12);
+    transform-origin: 50% 0;
+  }
+  .a3--celular .a3__painel:not(:first-child) .a3__painel-fundo { clip-path: none; }
+  .a3--celular .a3__painel-fundo, .a3--celular .a3__painel-fundo img { will-change: auto; }
+  .a3--celular .a3__painel:first-child .a3__painel-fundo img { object-position: 36% 50%; } /* ilha e banquetas */
+  .a3--celular .a3__painel-fundo::after { display: none; }
+  /* O cartão de vidro de cada material fica sempre à vista no próprio cartão */
+  .a3--celular .a3__painel-conteudo { visibility: visible; opacity: 1; padding: 0 12px 12px; transform: none; }
+  .a3--celular .a3__cartao { padding: 16px 18px 18px; border-radius: 8px; }
+  .a3--celular .a3__cartao-topo { margin-bottom: 14px; }
+  .a3--celular .a3__cartao > .a3__progresso { display: none; }
+  .a3--celular .a3__cartao-corpo { grid-template-columns: 64px minmax(0, 1fr); align-items: center; gap: 16px; }
+  .a3--celular .a3__painel-nome { font-size: 26px; }
+  .a3--celular .a3__painel-desc { margin-top: 8px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .js [data-a3-sobe] { opacity: 1; transform: none; transition: none; }
+  .a3__bast-painel .mf__fecho-fundo { animation: none; }
+  .a3__dica span { animation: none; }
+  .a3__botao, .a3__botao-fundo, .a3__botao-ico svg { transition: none; }
+}

@@ -1,0 +1,1000 @@
+<!doctype html>
+<html lang="pt-BR" class="is-limpo">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Móveis sob medida de alto padrão em São Paulo | Nazzan</title>
+  <meta name="description" content="Marcenaria de alto padrão na Mooca. Projeto 3D antes de fechar, acabamento caprichado e entrega na data combinada.">
+  <meta name="theme-color" content="#17302C">
+  <link rel="canonical" href="https://nazzan.com.br/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:title" content="Nazzan, Móveis Sob Medida">
+  <meta property="og:description" content="Seu projeto sob medida, pronto na data combinada. Marcenaria de alto padrão na Mooca, São Paulo.">
+  <meta property="og:image" content="https://nazzan.com.br/assets/img/og-nazzan.jpg">
+
+  <link rel="icon" type="image/png" sizes="64x64" href="assets/marca/favicon-64.png">
+  <link rel="apple-touch-icon" href="assets/marca/apple-touch-icon.png">
+
+  <script>
+    document.documentElement.classList.add("js");
+    // A abertura cinematografica fica disponivel para revisao explicita.
+    if (new URLSearchParams(location.search).get("abertura") === "1" &&
+        !matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      document.documentElement.classList.add("is-hero-entrada", "is-intro", "is-intro-logo");
+      setTimeout(() => {
+        document.documentElement.classList.remove("is-hero-entrada", "is-intro", "is-intro-logo");
+        document.documentElement.classList.add("hero-iniciada", "galeria-iniciada");
+        document.dispatchEvent(new Event("nazzan:intro-fim"));
+      }, 9000);
+    }
+  </script>
+  <link rel="preload" as="image" type="image/avif" href="assets/img/otimizadas/hero-galeria/01-cozinha-420.avif" imagesrcset="assets/img/otimizadas/hero-galeria/01-cozinha-420.avif 420w, assets/img/otimizadas/hero-galeria/01-cozinha-600.avif 600w" imagesizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px" fetchpriority="high">
+  <link rel="preload" as="font" type="font/woff2" href="assets/fonts/inter-tight-400-latin.woff2" crossorigin>
+  <link rel="stylesheet" href="css/site-5ef183b4ac2a.min.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HomeAndConstructionBusiness",
+    "name": "Nazzan, Móveis Sob Medida",
+    "url": "https://nazzan.com.br/",
+    "image": "https://nazzan.com.br/assets/img/og-nazzan.jpg",
+    "email": "atendimento@nazzan.com.br",
+    "telephone": "+55-11-3136-1242",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Rua do Oratório, 3735",
+      "addressLocality": "São Paulo",
+      "addressRegion": "SP",
+      "postalCode": "03195-100",
+      "addressCountry": "BR"
+    },
+    "sameAs": ["https://www.instagram.com/nazzansobmedida/"]
+  }
+  </script>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <!-- Monograma Nazzan em linha: fachada com telhado inclinado e vão interno -->
+    <symbol id="monograma" viewBox="0 0 40 44">
+      <path d="M4 42V17.5a4 4 0 0 1 2.9-3.85L32.4 6.3A3 3 0 0 1 36 9.2V42" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/>
+      <path d="M12 42V23.2l8-2.3V42M26 42V19.2l4-1.1V42" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="seta" viewBox="0 0 16 16">
+      <path d="M2 8h11M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="whatsapp" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2Zm0 18.15c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24 4.54 0 8.24 3.7 8.24 8.24 0 4.55-3.7 8.24-8.24 8.24Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.78.97-.15.16-.29.18-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.5.11-.11.25-.29.37-.43.13-.15.17-.25.25-.42.08-.16.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.42h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.07-.1-.23-.16-.48-.28Z"/>
+    </symbol>
+  </defs>
+</svg>
+
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+
+
+<!-- ============ CABEÇALHO ============ -->
+<header class="topo" data-topo>
+  <div class="topo__in">
+    <button class="topo__menu" type="button" aria-expanded="false" aria-controls="menu-principal" aria-haspopup="dialog" data-menu-btn>
+      <span class="sr">Abrir menu</span>
+      <span class="topo__menu-icone" aria-hidden="true"><i></i><i></i></span>
+      <span aria-hidden="true">Menu</span>
+    </button>
+    <a class="topo__logo" href="#inicio" aria-label="Nazzan, Móveis Sob Medida · início">
+      <img class="logo--neg" src="assets/marca/nazzan-logo-negativo.png" alt="" width="425" height="80">
+      <img class="logo--pos" src="assets/marca/nazzan-logo-positivo.png" alt="" width="425" height="80">
+    </a>
+    <a class="topo__contato" href="#orcamento">
+      <span>Solicite seu projeto</span>
+      <span class="topo__contato-icone" aria-hidden="true"><svg width="14" height="14" focusable="false"><use href="#seta"/></svg></span>
+    </a>
+  </div>
+</header>
+  <dialog class="menu-painel" id="menu-principal" aria-label="Menu principal" data-menu data-lenis-prevent>
+    <div class="topo__in menu-painel__topo">
+      <div class="menu-painel__acoes">
+        <button class="topo__menu" type="button" data-menu-fechar autofocus aria-label="Fechar menu">
+          <span class="topo__menu-icone" aria-hidden="true"><i></i><i></i></span>
+        </button>
+        <a class="menu-painel__atalho" href="#ambientes">Ambientes</a>
+      </div>
+      <a class="topo__logo" href="#inicio" aria-label="Nazzan, Móveis Sob Medida · início">
+        <img src="assets/marca/nazzan-logo-negativo.png" alt="" width="425" height="80">
+      </a>
+      <a class="topo__contato" href="#orcamento">
+        <span>Solicite seu projeto</span>
+        <span class="topo__contato-icone" aria-hidden="true"><svg width="14" height="14" focusable="false"><use href="#seta"/></svg></span>
+      </a>
+    </div>
+    <div class="menu-painel__conteudo">
+    <div class="menu-painel__coluna">
+    <nav class="menu-painel__nav" aria-label="Principal">
+      <a href="#ambientes" data-menu-previa="0">Ambientes</a>
+      <a href="#projetos" data-menu-previa="1">Projetos</a>
+      <a href="#acabamentos" data-menu-previa="2">Acabamentos</a>
+      <a href="#processo" data-menu-previa="3">Processo</a>
+      <a href="#duvidas" data-menu-previa="4">Dúvidas</a>
+      <a href="#orcamento" data-menu-previa="5">Orçamento</a>
+    </nav>
+    <div class="menu-painel__contato">
+      <p>Rua do Oratório, 3735 · Mooca</p>
+      <a href="tel:+551131361242">(11) 3136-1242</a>
+    </div>
+    </div>
+    </div>
+    <div class="menu-painel__imagens" aria-hidden="true">
+      <figure class="menu-painel__foto is-ativa" data-menu-foto="0"><img src="assets/img/otimizadas/ambientes-2026-10-18/00-ambientes-960.webp" srcset="assets/img/otimizadas/ambientes-2026-10-18/00-ambientes-480.webp 480w, assets/img/otimizadas/ambientes-2026-10-18/00-ambientes-960.webp 960w, assets/img/otimizadas/ambientes-2026-10-18/00-ambientes-1440.webp 1440w, assets/img/otimizadas/ambientes-2026-10-18/00-ambientes-1672.webp 1672w" sizes="50vw" alt="" width="1672" height="941" loading="lazy" decoding="async"></figure>
+      <figure class="menu-painel__foto" data-menu-foto="1"><img src="assets/img/otimizadas/projetos-2026-10-21/01-cozinha-nogueira-960.webp" srcset="assets/img/otimizadas/projetos-2026-10-21/01-cozinha-nogueira-480.webp 480w, assets/img/otimizadas/projetos-2026-10-21/01-cozinha-nogueira-960.webp 960w, assets/img/otimizadas/projetos-2026-10-21/01-cozinha-nogueira-1122.webp 1122w" sizes="50vw" alt="" width="1122" height="1402" loading="lazy" decoding="async"></figure>
+      <figure class="menu-painel__foto" data-menu-foto="2"><img src="assets/img/otimizadas/acabamentos-2026-10-19/material-nogueira-960.webp" srcset="assets/img/otimizadas/acabamentos-2026-10-19/material-nogueira-480.webp 480w, assets/img/otimizadas/acabamentos-2026-10-19/material-nogueira-960.webp 960w, assets/img/otimizadas/acabamentos-2026-10-19/material-nogueira-1254.webp 1254w" sizes="50vw" alt="" width="1254" height="1254" loading="lazy" decoding="async"></figure>
+      <figure class="menu-painel__foto" data-menu-foto="3"><img src="assets/img/otimizadas/processo-2026-10-20/02-projeto-3d-960.webp" srcset="assets/img/otimizadas/processo-2026-10-20/02-projeto-3d-480.webp 480w, assets/img/otimizadas/processo-2026-10-20/02-projeto-3d-960.webp 960w, assets/img/otimizadas/processo-2026-10-20/02-projeto-3d-1122.webp 1122w" sizes="50vw" alt="" width="1122" height="1402" loading="lazy" decoding="async"></figure>
+      <figure class="menu-painel__foto" data-menu-foto="4"><img src="assets/img/otimizadas/ambientes-2026-10-18/03-quarto-960.webp" srcset="assets/img/otimizadas/ambientes-2026-10-18/03-quarto-480.webp 480w, assets/img/otimizadas/ambientes-2026-10-18/03-quarto-960.webp 960w, assets/img/otimizadas/ambientes-2026-10-18/03-quarto-1440.webp 1440w, assets/img/otimizadas/ambientes-2026-10-18/03-quarto-1672.webp 1672w" sizes="50vw" alt="" width="1672" height="941" loading="lazy" decoding="async"></figure>
+      <figure class="menu-painel__foto" data-menu-foto="5"><img src="assets/img/otimizadas/hero-video/montagem-fim-960.webp" srcset="assets/img/otimizadas/hero-video/montagem-fim-480.webp 480w, assets/img/otimizadas/hero-video/montagem-fim-960.webp 960w, assets/img/otimizadas/hero-video/montagem-fim-1440.webp 1440w, assets/img/otimizadas/hero-video/montagem-fim-1920.webp 1920w" sizes="50vw" alt="" width="1920" height="1080" loading="lazy" decoding="async"></figure>
+    </div>
+  </dialog>
+
+<main id="conteudo">
+
+  <!-- ============ 1. HERO + 2. MANIFESTO (protótipo 09, ref.: Studio Foundry) ============
+       A hero da landing fica numa camada do palco preso. Ao rolar, ela é recortada num polígono
+       e encolhe até a imagem central; daí 6 fotos em polígonos orbitam enquanto as duas frases
+       entram e saem linha a linha. No fim, as fotos voam para fora, a imagem central para no
+       meio e se abre na imagem ampla. Depois: Do projeto à montagem (protótipo 05) e o fecho.
+       Reserva da versão anterior: _copias/landing-antes-orbita-2026-10-17/ -->
+  <section class="manifesto mf m9 m9--com-hero m9--montagem" id="manifesto" aria-labelledby="manifesto-titulo">
+    <div class="m9__trilho" data-m9>
+      <div class="m9__palco">
+        <div class="m9__hero" data-m9-hero>
+        <section class="hero" id="inicio" aria-labelledby="hero-titulo" data-hero>
+          <div class="hero__gradiente" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+          <div class="hero__galeria" aria-hidden="true"><div class="hero__galeria-in" data-galeria-hero>
+<div class="hero__fileira"><figure><picture><source type="image/avif" srcset="assets/img/otimizadas/hero-galeria/01-cozinha-420.avif 420w, assets/img/otimizadas/hero-galeria/01-cozinha-600.avif 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px"><img src="assets/img/otimizadas/hero-galeria/01-cozinha-420.webp" srcset="assets/img/otimizadas/hero-galeria/01-cozinha-420.webp 420w, assets/img/otimizadas/hero-galeria/01-cozinha-600.webp 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px" alt="" width="600" height="778" decoding="sync" fetchpriority="high"></picture></figure><figure><picture><source type="image/avif" srcset="assets/img/otimizadas/hero-galeria/02-sala-jantar-420.avif 420w, assets/img/otimizadas/hero-galeria/02-sala-jantar-600.avif 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px"><img src="assets/img/otimizadas/hero-galeria/02-sala-jantar-420.webp" srcset="assets/img/otimizadas/hero-galeria/02-sala-jantar-420.webp 420w, assets/img/otimizadas/hero-galeria/02-sala-jantar-600.webp 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px" alt="" width="600" height="778" decoding="async"></picture></figure><figure><picture><source type="image/avif" srcset="assets/img/otimizadas/hero-galeria/02-closet-420.avif 420w, assets/img/otimizadas/hero-galeria/02-closet-600.avif 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px"><img src="assets/img/otimizadas/hero-galeria/02-closet-420.webp" srcset="assets/img/otimizadas/hero-galeria/02-closet-420.webp 420w, assets/img/otimizadas/hero-galeria/02-closet-600.webp 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px" alt="" width="600" height="778" decoding="async"></picture></figure><figure><picture><source type="image/avif" srcset="assets/img/otimizadas/hero-galeria/01-cozinha-nogueira-420.avif 420w, assets/img/otimizadas/hero-galeria/01-cozinha-nogueira-600.avif 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px"><img src="assets/img/otimizadas/hero-galeria/01-cozinha-nogueira-420.webp" srcset="assets/img/otimizadas/hero-galeria/01-cozinha-nogueira-420.webp 420w, assets/img/otimizadas/hero-galeria/01-cozinha-nogueira-600.webp 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px" alt="" width="600" height="778" decoding="async"></picture></figure><figure><picture><source type="image/avif" srcset="assets/img/otimizadas/hero-galeria/05-sala-420.avif 420w, assets/img/otimizadas/hero-galeria/05-sala-600.avif 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px"><img src="assets/img/otimizadas/hero-galeria/05-sala-420.webp" srcset="assets/img/otimizadas/hero-galeria/05-sala-420.webp 420w, assets/img/otimizadas/hero-galeria/05-sala-600.webp 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px" alt="" width="600" height="778" decoding="async"></picture></figure><figure><picture><source type="image/avif" srcset="assets/img/otimizadas/hero-galeria/03-quarto-420.avif 420w, assets/img/otimizadas/hero-galeria/03-quarto-600.avif 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px"><img src="assets/img/otimizadas/hero-galeria/03-quarto-420.webp" srcset="assets/img/otimizadas/hero-galeria/03-quarto-420.webp 420w, assets/img/otimizadas/hero-galeria/03-quarto-600.webp 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px" alt="" width="600" height="778" decoding="async"></picture></figure><figure><picture><source type="image/avif" srcset="assets/img/otimizadas/hero-galeria/03-cozinha-carvalho-420.avif 420w, assets/img/otimizadas/hero-galeria/03-cozinha-carvalho-600.avif 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px"><img src="assets/img/otimizadas/hero-galeria/03-cozinha-carvalho-420.webp" srcset="assets/img/otimizadas/hero-galeria/03-cozinha-carvalho-420.webp 420w, assets/img/otimizadas/hero-galeria/03-cozinha-carvalho-600.webp 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px" alt="" width="600" height="778" decoding="async"></picture></figure><figure><picture><source type="image/avif" srcset="assets/img/otimizadas/hero-galeria/04-home-office-420.avif 420w, assets/img/otimizadas/hero-galeria/04-home-office-600.avif 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px"><img src="assets/img/otimizadas/hero-galeria/04-home-office-420.webp" srcset="assets/img/otimizadas/hero-galeria/04-home-office-420.webp 420w, assets/img/otimizadas/hero-galeria/04-home-office-600.webp 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px" alt="" width="600" height="778" decoding="async"></picture></figure><figure><picture><source type="image/avif" srcset="assets/img/otimizadas/hero-galeria/04-sala-ripado-420.avif 420w, assets/img/otimizadas/hero-galeria/04-sala-ripado-600.avif 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px"><img src="assets/img/otimizadas/hero-galeria/04-sala-ripado-420.webp" srcset="assets/img/otimizadas/hero-galeria/04-sala-ripado-420.webp 420w, assets/img/otimizadas/hero-galeria/04-sala-ripado-600.webp 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px" alt="" width="600" height="778" decoding="async"></picture></figure><figure><picture><source type="image/avif" srcset="assets/img/otimizadas/hero-galeria/00-ambientes-420.avif 420w, assets/img/otimizadas/hero-galeria/00-ambientes-600.avif 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px"><img src="assets/img/otimizadas/hero-galeria/00-ambientes-420.webp" srcset="assets/img/otimizadas/hero-galeria/00-ambientes-420.webp 420w, assets/img/otimizadas/hero-galeria/00-ambientes-600.webp 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px" alt="" width="600" height="778" decoding="async"></picture></figure><figure><picture><source type="image/avif" srcset="assets/img/otimizadas/hero-galeria/01-cozinha-420.avif 420w, assets/img/otimizadas/hero-galeria/01-cozinha-600.avif 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px"><img src="assets/img/otimizadas/hero-galeria/01-cozinha-420.webp" srcset="assets/img/otimizadas/hero-galeria/01-cozinha-420.webp 420w, assets/img/otimizadas/hero-galeria/01-cozinha-600.webp 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px" alt="" width="600" height="778" decoding="sync" fetchpriority="high"></picture></figure><figure><picture><source type="image/avif" srcset="assets/img/otimizadas/hero-galeria/02-sala-jantar-420.avif 420w, assets/img/otimizadas/hero-galeria/02-sala-jantar-600.avif 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px"><img src="assets/img/otimizadas/hero-galeria/02-sala-jantar-420.webp" srcset="assets/img/otimizadas/hero-galeria/02-sala-jantar-420.webp 420w, assets/img/otimizadas/hero-galeria/02-sala-jantar-600.webp 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px" alt="" width="600" height="778" decoding="async"></picture></figure><figure><picture><source type="image/avif" srcset="assets/img/otimizadas/hero-galeria/02-closet-420.avif 420w, assets/img/otimizadas/hero-galeria/02-closet-600.avif 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px"><img src="assets/img/otimizadas/hero-galeria/02-closet-420.webp" srcset="assets/img/otimizadas/hero-galeria/02-closet-420.webp 420w, assets/img/otimizadas/hero-galeria/02-closet-600.webp 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px" alt="" width="600" height="778" decoding="async"></picture></figure><figure><picture><source type="image/avif" srcset="assets/img/otimizadas/hero-galeria/01-cozinha-nogueira-420.avif 420w, assets/img/otimizadas/hero-galeria/01-cozinha-nogueira-600.avif 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px"><img src="assets/img/otimizadas/hero-galeria/01-cozinha-nogueira-420.webp" srcset="assets/img/otimizadas/hero-galeria/01-cozinha-nogueira-420.webp 420w, assets/img/otimizadas/hero-galeria/01-cozinha-nogueira-600.webp 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px" alt="" width="600" height="778" decoding="async"></picture></figure><figure><picture><source type="image/avif" srcset="assets/img/otimizadas/hero-galeria/05-sala-420.avif 420w, assets/img/otimizadas/hero-galeria/05-sala-600.avif 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px"><img src="assets/img/otimizadas/hero-galeria/05-sala-420.webp" srcset="assets/img/otimizadas/hero-galeria/05-sala-420.webp 420w, assets/img/otimizadas/hero-galeria/05-sala-600.webp 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px" alt="" width="600" height="778" decoding="async"></picture></figure><figure><picture><source type="image/avif" srcset="assets/img/otimizadas/hero-galeria/03-quarto-420.avif 420w, assets/img/otimizadas/hero-galeria/03-quarto-600.avif 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px"><img src="assets/img/otimizadas/hero-galeria/03-quarto-420.webp" srcset="assets/img/otimizadas/hero-galeria/03-quarto-420.webp 420w, assets/img/otimizadas/hero-galeria/03-quarto-600.webp 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px" alt="" width="600" height="778" decoding="async"></picture></figure><figure><picture><source type="image/avif" srcset="assets/img/otimizadas/hero-galeria/03-cozinha-carvalho-420.avif 420w, assets/img/otimizadas/hero-galeria/03-cozinha-carvalho-600.avif 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px"><img src="assets/img/otimizadas/hero-galeria/03-cozinha-carvalho-420.webp" srcset="assets/img/otimizadas/hero-galeria/03-cozinha-carvalho-420.webp 420w, assets/img/otimizadas/hero-galeria/03-cozinha-carvalho-600.webp 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px" alt="" width="600" height="778" decoding="async"></picture></figure><figure><picture><source type="image/avif" srcset="assets/img/otimizadas/hero-galeria/04-home-office-420.avif 420w, assets/img/otimizadas/hero-galeria/04-home-office-600.avif 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px"><img src="assets/img/otimizadas/hero-galeria/04-home-office-420.webp" srcset="assets/img/otimizadas/hero-galeria/04-home-office-420.webp 420w, assets/img/otimizadas/hero-galeria/04-home-office-600.webp 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px" alt="" width="600" height="778" decoding="async"></picture></figure><figure><picture><source type="image/avif" srcset="assets/img/otimizadas/hero-galeria/04-sala-ripado-420.avif 420w, assets/img/otimizadas/hero-galeria/04-sala-ripado-600.avif 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px"><img src="assets/img/otimizadas/hero-galeria/04-sala-ripado-420.webp" srcset="assets/img/otimizadas/hero-galeria/04-sala-ripado-420.webp 420w, assets/img/otimizadas/hero-galeria/04-sala-ripado-600.webp 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px" alt="" width="600" height="778" decoding="async"></picture></figure><figure><picture><source type="image/avif" srcset="assets/img/otimizadas/hero-galeria/00-ambientes-420.avif 420w, assets/img/otimizadas/hero-galeria/00-ambientes-600.avif 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px"><img src="assets/img/otimizadas/hero-galeria/00-ambientes-420.webp" srcset="assets/img/otimizadas/hero-galeria/00-ambientes-420.webp 420w, assets/img/otimizadas/hero-galeria/00-ambientes-600.webp 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px" alt="" width="600" height="778" decoding="async"></picture></figure></div>
+<div class="hero__fileira"><figure><picture><source type="image/avif" srcset="assets/img/otimizadas/hero-galeria/05-sala-420.avif 420w, assets/img/otimizadas/hero-galeria/05-sala-600.avif 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px"><img src="assets/img/otimizadas/hero-galeria/05-sala-420.webp" srcset="assets/img/otimizadas/hero-galeria/05-sala-420.webp 420w, assets/img/otimizadas/hero-galeria/05-sala-600.webp 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px" alt="" width="600" height="778" decoding="async"></picture></figure><figure><picture><source type="image/avif" srcset="assets/img/otimizadas/hero-galeria/03-quarto-420.avif 420w, assets/img/otimizadas/hero-galeria/03-quarto-600.avif 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px"><img src="assets/img/otimizadas/hero-galeria/03-quarto-420.webp" srcset="assets/img/otimizadas/hero-galeria/03-quarto-420.webp 420w, assets/img/otimizadas/hero-galeria/03-quarto-600.webp 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px" alt="" width="600" height="778" decoding="async"></picture></figure><figure><picture><source type="image/avif" srcset="assets/img/otimizadas/hero-galeria/03-cozinha-carvalho-420.avif 420w, assets/img/otimizadas/hero-galeria/03-cozinha-carvalho-600.avif 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px"><img src="assets/img/otimizadas/hero-galeria/03-cozinha-carvalho-420.webp" srcset="assets/img/otimizadas/hero-galeria/03-cozinha-carvalho-420.webp 420w, assets/img/otimizadas/hero-galeria/03-cozinha-carvalho-600.webp 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px" alt="" width="600" height="778" decoding="async"></picture></figure><figure><picture><source type="image/avif" srcset="assets/img/otimizadas/hero-galeria/04-home-office-420.avif 420w, assets/img/otimizadas/hero-galeria/04-home-office-600.avif 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px"><img src="assets/img/otimizadas/hero-galeria/04-home-office-420.webp" srcset="assets/img/otimizadas/hero-galeria/04-home-office-420.webp 420w, assets/img/otimizadas/hero-galeria/04-home-office-600.webp 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px" alt="" width="600" height="778" decoding="async"></picture></figure><figure><picture><source type="image/avif" srcset="assets/img/otimizadas/hero-galeria/04-sala-ripado-420.avif 420w, assets/img/otimizadas/hero-galeria/04-sala-ripado-600.avif 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px"><img src="assets/img/otimizadas/hero-galeria/04-sala-ripado-420.webp" srcset="assets/img/otimizadas/hero-galeria/04-sala-ripado-420.webp 420w, assets/img/otimizadas/hero-galeria/04-sala-ripado-600.webp 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px" alt="" width="600" height="778" decoding="async"></picture></figure><figure><picture><source type="image/avif" srcset="assets/img/otimizadas/hero-galeria/00-ambientes-420.avif 420w, assets/img/otimizadas/hero-galeria/00-ambientes-600.avif 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px"><img src="assets/img/otimizadas/hero-galeria/00-ambientes-420.webp" srcset="assets/img/otimizadas/hero-galeria/00-ambientes-420.webp 420w, assets/img/otimizadas/hero-galeria/00-ambientes-600.webp 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px" alt="" width="600" height="778" decoding="async"></picture></figure><figure><picture><source type="image/avif" srcset="assets/img/otimizadas/hero-galeria/01-cozinha-420.avif 420w, assets/img/otimizadas/hero-galeria/01-cozinha-600.avif 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px"><img src="assets/img/otimizadas/hero-galeria/01-cozinha-420.webp" srcset="assets/img/otimizadas/hero-galeria/01-cozinha-420.webp 420w, assets/img/otimizadas/hero-galeria/01-cozinha-600.webp 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px" alt="" width="600" height="778" decoding="sync" fetchpriority="high"></picture></figure><figure><picture><source type="image/avif" srcset="assets/img/otimizadas/hero-galeria/02-sala-jantar-420.avif 420w, assets/img/otimizadas/hero-galeria/02-sala-jantar-600.avif 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px"><img src="assets/img/otimizadas/hero-galeria/02-sala-jantar-420.webp" srcset="assets/img/otimizadas/hero-galeria/02-sala-jantar-420.webp 420w, assets/img/otimizadas/hero-galeria/02-sala-jantar-600.webp 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px" alt="" width="600" height="778" decoding="async"></picture></figure><figure><picture><source type="image/avif" srcset="assets/img/otimizadas/hero-galeria/02-closet-420.avif 420w, assets/img/otimizadas/hero-galeria/02-closet-600.avif 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px"><img src="assets/img/otimizadas/hero-galeria/02-closet-420.webp" srcset="assets/img/otimizadas/hero-galeria/02-closet-420.webp 420w, assets/img/otimizadas/hero-galeria/02-closet-600.webp 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px" alt="" width="600" height="778" decoding="async"></picture></figure><figure><picture><source type="image/avif" srcset="assets/img/otimizadas/hero-galeria/01-cozinha-nogueira-420.avif 420w, assets/img/otimizadas/hero-galeria/01-cozinha-nogueira-600.avif 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px"><img src="assets/img/otimizadas/hero-galeria/01-cozinha-nogueira-420.webp" srcset="assets/img/otimizadas/hero-galeria/01-cozinha-nogueira-420.webp 420w, assets/img/otimizadas/hero-galeria/01-cozinha-nogueira-600.webp 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px" alt="" width="600" height="778" decoding="async"></picture></figure><figure><picture><source type="image/avif" srcset="assets/img/otimizadas/hero-galeria/05-sala-420.avif 420w, assets/img/otimizadas/hero-galeria/05-sala-600.avif 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px"><img src="assets/img/otimizadas/hero-galeria/05-sala-420.webp" srcset="assets/img/otimizadas/hero-galeria/05-sala-420.webp 420w, assets/img/otimizadas/hero-galeria/05-sala-600.webp 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px" alt="" width="600" height="778" decoding="async"></picture></figure><figure><picture><source type="image/avif" srcset="assets/img/otimizadas/hero-galeria/03-quarto-420.avif 420w, assets/img/otimizadas/hero-galeria/03-quarto-600.avif 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px"><img src="assets/img/otimizadas/hero-galeria/03-quarto-420.webp" srcset="assets/img/otimizadas/hero-galeria/03-quarto-420.webp 420w, assets/img/otimizadas/hero-galeria/03-quarto-600.webp 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px" alt="" width="600" height="778" decoding="async"></picture></figure><figure><picture><source type="image/avif" srcset="assets/img/otimizadas/hero-galeria/03-cozinha-carvalho-420.avif 420w, assets/img/otimizadas/hero-galeria/03-cozinha-carvalho-600.avif 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px"><img src="assets/img/otimizadas/hero-galeria/03-cozinha-carvalho-420.webp" srcset="assets/img/otimizadas/hero-galeria/03-cozinha-carvalho-420.webp 420w, assets/img/otimizadas/hero-galeria/03-cozinha-carvalho-600.webp 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px" alt="" width="600" height="778" decoding="async"></picture></figure><figure><picture><source type="image/avif" srcset="assets/img/otimizadas/hero-galeria/04-home-office-420.avif 420w, assets/img/otimizadas/hero-galeria/04-home-office-600.avif 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px"><img src="assets/img/otimizadas/hero-galeria/04-home-office-420.webp" srcset="assets/img/otimizadas/hero-galeria/04-home-office-420.webp 420w, assets/img/otimizadas/hero-galeria/04-home-office-600.webp 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px" alt="" width="600" height="778" decoding="async"></picture></figure><figure><picture><source type="image/avif" srcset="assets/img/otimizadas/hero-galeria/04-sala-ripado-420.avif 420w, assets/img/otimizadas/hero-galeria/04-sala-ripado-600.avif 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px"><img src="assets/img/otimizadas/hero-galeria/04-sala-ripado-420.webp" srcset="assets/img/otimizadas/hero-galeria/04-sala-ripado-420.webp 420w, assets/img/otimizadas/hero-galeria/04-sala-ripado-600.webp 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px" alt="" width="600" height="778" decoding="async"></picture></figure><figure><picture><source type="image/avif" srcset="assets/img/otimizadas/hero-galeria/00-ambientes-420.avif 420w, assets/img/otimizadas/hero-galeria/00-ambientes-600.avif 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px"><img src="assets/img/otimizadas/hero-galeria/00-ambientes-420.webp" srcset="assets/img/otimizadas/hero-galeria/00-ambientes-420.webp 420w, assets/img/otimizadas/hero-galeria/00-ambientes-600.webp 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px" alt="" width="600" height="778" decoding="async"></picture></figure><figure><picture><source type="image/avif" srcset="assets/img/otimizadas/hero-galeria/01-cozinha-420.avif 420w, assets/img/otimizadas/hero-galeria/01-cozinha-600.avif 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px"><img src="assets/img/otimizadas/hero-galeria/01-cozinha-420.webp" srcset="assets/img/otimizadas/hero-galeria/01-cozinha-420.webp 420w, assets/img/otimizadas/hero-galeria/01-cozinha-600.webp 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px" alt="" width="600" height="778" decoding="sync" fetchpriority="high"></picture></figure><figure><picture><source type="image/avif" srcset="assets/img/otimizadas/hero-galeria/02-sala-jantar-420.avif 420w, assets/img/otimizadas/hero-galeria/02-sala-jantar-600.avif 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px"><img src="assets/img/otimizadas/hero-galeria/02-sala-jantar-420.webp" srcset="assets/img/otimizadas/hero-galeria/02-sala-jantar-420.webp 420w, assets/img/otimizadas/hero-galeria/02-sala-jantar-600.webp 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px" alt="" width="600" height="778" decoding="async"></picture></figure><figure><picture><source type="image/avif" srcset="assets/img/otimizadas/hero-galeria/02-closet-420.avif 420w, assets/img/otimizadas/hero-galeria/02-closet-600.avif 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px"><img src="assets/img/otimizadas/hero-galeria/02-closet-420.webp" srcset="assets/img/otimizadas/hero-galeria/02-closet-420.webp 420w, assets/img/otimizadas/hero-galeria/02-closet-600.webp 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px" alt="" width="600" height="778" decoding="async"></picture></figure><figure><picture><source type="image/avif" srcset="assets/img/otimizadas/hero-galeria/01-cozinha-nogueira-420.avif 420w, assets/img/otimizadas/hero-galeria/01-cozinha-nogueira-600.avif 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px"><img src="assets/img/otimizadas/hero-galeria/01-cozinha-nogueira-420.webp" srcset="assets/img/otimizadas/hero-galeria/01-cozinha-nogueira-420.webp 420w, assets/img/otimizadas/hero-galeria/01-cozinha-nogueira-600.webp 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px" alt="" width="600" height="778" decoding="async"></picture></figure></div>
+<div class="hero__fileira"><figure><picture><source type="image/avif" srcset="assets/img/otimizadas/hero-galeria/04-sala-ripado-420.avif 420w, assets/img/otimizadas/hero-galeria/04-sala-ripado-600.avif 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px"><img src="assets/img/otimizadas/hero-galeria/04-sala-ripado-420.webp" srcset="assets/img/otimizadas/hero-galeria/04-sala-ripado-420.webp 420w, assets/img/otimizadas/hero-galeria/04-sala-ripado-600.webp 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px" alt="" width="600" height="778" decoding="async"></picture></figure><figure><picture><source type="image/avif" srcset="assets/img/otimizadas/hero-galeria/00-ambientes-420.avif 420w, assets/img/otimizadas/hero-galeria/00-ambientes-600.avif 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px"><img src="assets/img/otimizadas/hero-galeria/00-ambientes-420.webp" srcset="assets/img/otimizadas/hero-galeria/00-ambientes-420.webp 420w, assets/img/otimizadas/hero-galeria/00-ambientes-600.webp 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px" alt="" width="600" height="778" decoding="async"></picture></figure><figure><picture><source type="image/avif" srcset="assets/img/otimizadas/hero-galeria/01-cozinha-420.avif 420w, assets/img/otimizadas/hero-galeria/01-cozinha-600.avif 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px"><img src="assets/img/otimizadas/hero-galeria/01-cozinha-420.webp" srcset="assets/img/otimizadas/hero-galeria/01-cozinha-420.webp 420w, assets/img/otimizadas/hero-galeria/01-cozinha-600.webp 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px" alt="" width="600" height="778" decoding="sync" fetchpriority="high"></picture></figure><figure><picture><source type="image/avif" srcset="assets/img/otimizadas/hero-galeria/02-sala-jantar-420.avif 420w, assets/img/otimizadas/hero-galeria/02-sala-jantar-600.avif 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px"><img src="assets/img/otimizadas/hero-galeria/02-sala-jantar-420.webp" srcset="assets/img/otimizadas/hero-galeria/02-sala-jantar-420.webp 420w, assets/img/otimizadas/hero-galeria/02-sala-jantar-600.webp 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px" alt="" width="600" height="778" decoding="async"></picture></figure><figure><picture><source type="image/avif" srcset="assets/img/otimizadas/hero-galeria/02-closet-420.avif 420w, assets/img/otimizadas/hero-galeria/02-closet-600.avif 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px"><img src="assets/img/otimizadas/hero-galeria/02-closet-420.webp" srcset="assets/img/otimizadas/hero-galeria/02-closet-420.webp 420w, assets/img/otimizadas/hero-galeria/02-closet-600.webp 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px" alt="" width="600" height="778" decoding="async"></picture></figure><figure><picture><source type="image/avif" srcset="assets/img/otimizadas/hero-galeria/01-cozinha-nogueira-420.avif 420w, assets/img/otimizadas/hero-galeria/01-cozinha-nogueira-600.avif 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px"><img src="assets/img/otimizadas/hero-galeria/01-cozinha-nogueira-420.webp" srcset="assets/img/otimizadas/hero-galeria/01-cozinha-nogueira-420.webp 420w, assets/img/otimizadas/hero-galeria/01-cozinha-nogueira-600.webp 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px" alt="" width="600" height="778" decoding="async"></picture></figure><figure><picture><source type="image/avif" srcset="assets/img/otimizadas/hero-galeria/05-sala-420.avif 420w, assets/img/otimizadas/hero-galeria/05-sala-600.avif 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px"><img src="assets/img/otimizadas/hero-galeria/05-sala-420.webp" srcset="assets/img/otimizadas/hero-galeria/05-sala-420.webp 420w, assets/img/otimizadas/hero-galeria/05-sala-600.webp 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px" alt="" width="600" height="778" decoding="async"></picture></figure><figure><picture><source type="image/avif" srcset="assets/img/otimizadas/hero-galeria/03-quarto-420.avif 420w, assets/img/otimizadas/hero-galeria/03-quarto-600.avif 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px"><img src="assets/img/otimizadas/hero-galeria/03-quarto-420.webp" srcset="assets/img/otimizadas/hero-galeria/03-quarto-420.webp 420w, assets/img/otimizadas/hero-galeria/03-quarto-600.webp 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px" alt="" width="600" height="778" decoding="async"></picture></figure><figure><picture><source type="image/avif" srcset="assets/img/otimizadas/hero-galeria/03-cozinha-carvalho-420.avif 420w, assets/img/otimizadas/hero-galeria/03-cozinha-carvalho-600.avif 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px"><img src="assets/img/otimizadas/hero-galeria/03-cozinha-carvalho-420.webp" srcset="assets/img/otimizadas/hero-galeria/03-cozinha-carvalho-420.webp 420w, assets/img/otimizadas/hero-galeria/03-cozinha-carvalho-600.webp 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px" alt="" width="600" height="778" decoding="async"></picture></figure><figure><picture><source type="image/avif" srcset="assets/img/otimizadas/hero-galeria/04-home-office-420.avif 420w, assets/img/otimizadas/hero-galeria/04-home-office-600.avif 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px"><img src="assets/img/otimizadas/hero-galeria/04-home-office-420.webp" srcset="assets/img/otimizadas/hero-galeria/04-home-office-420.webp 420w, assets/img/otimizadas/hero-galeria/04-home-office-600.webp 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px" alt="" width="600" height="778" decoding="async"></picture></figure><figure><picture><source type="image/avif" srcset="assets/img/otimizadas/hero-galeria/04-sala-ripado-420.avif 420w, assets/img/otimizadas/hero-galeria/04-sala-ripado-600.avif 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px"><img src="assets/img/otimizadas/hero-galeria/04-sala-ripado-420.webp" srcset="assets/img/otimizadas/hero-galeria/04-sala-ripado-420.webp 420w, assets/img/otimizadas/hero-galeria/04-sala-ripado-600.webp 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px" alt="" width="600" height="778" decoding="async"></picture></figure><figure><picture><source type="image/avif" srcset="assets/img/otimizadas/hero-galeria/00-ambientes-420.avif 420w, assets/img/otimizadas/hero-galeria/00-ambientes-600.avif 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px"><img src="assets/img/otimizadas/hero-galeria/00-ambientes-420.webp" srcset="assets/img/otimizadas/hero-galeria/00-ambientes-420.webp 420w, assets/img/otimizadas/hero-galeria/00-ambientes-600.webp 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px" alt="" width="600" height="778" decoding="async"></picture></figure><figure><picture><source type="image/avif" srcset="assets/img/otimizadas/hero-galeria/01-cozinha-420.avif 420w, assets/img/otimizadas/hero-galeria/01-cozinha-600.avif 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px"><img src="assets/img/otimizadas/hero-galeria/01-cozinha-420.webp" srcset="assets/img/otimizadas/hero-galeria/01-cozinha-420.webp 420w, assets/img/otimizadas/hero-galeria/01-cozinha-600.webp 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px" alt="" width="600" height="778" decoding="sync" fetchpriority="high"></picture></figure><figure><picture><source type="image/avif" srcset="assets/img/otimizadas/hero-galeria/02-sala-jantar-420.avif 420w, assets/img/otimizadas/hero-galeria/02-sala-jantar-600.avif 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px"><img src="assets/img/otimizadas/hero-galeria/02-sala-jantar-420.webp" srcset="assets/img/otimizadas/hero-galeria/02-sala-jantar-420.webp 420w, assets/img/otimizadas/hero-galeria/02-sala-jantar-600.webp 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px" alt="" width="600" height="778" decoding="async"></picture></figure><figure><picture><source type="image/avif" srcset="assets/img/otimizadas/hero-galeria/02-closet-420.avif 420w, assets/img/otimizadas/hero-galeria/02-closet-600.avif 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px"><img src="assets/img/otimizadas/hero-galeria/02-closet-420.webp" srcset="assets/img/otimizadas/hero-galeria/02-closet-420.webp 420w, assets/img/otimizadas/hero-galeria/02-closet-600.webp 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px" alt="" width="600" height="778" decoding="async"></picture></figure><figure><picture><source type="image/avif" srcset="assets/img/otimizadas/hero-galeria/01-cozinha-nogueira-420.avif 420w, assets/img/otimizadas/hero-galeria/01-cozinha-nogueira-600.avif 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px"><img src="assets/img/otimizadas/hero-galeria/01-cozinha-nogueira-420.webp" srcset="assets/img/otimizadas/hero-galeria/01-cozinha-nogueira-420.webp 420w, assets/img/otimizadas/hero-galeria/01-cozinha-nogueira-600.webp 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px" alt="" width="600" height="778" decoding="async"></picture></figure><figure><picture><source type="image/avif" srcset="assets/img/otimizadas/hero-galeria/05-sala-420.avif 420w, assets/img/otimizadas/hero-galeria/05-sala-600.avif 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px"><img src="assets/img/otimizadas/hero-galeria/05-sala-420.webp" srcset="assets/img/otimizadas/hero-galeria/05-sala-420.webp 420w, assets/img/otimizadas/hero-galeria/05-sala-600.webp 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px" alt="" width="600" height="778" decoding="async"></picture></figure><figure><picture><source type="image/avif" srcset="assets/img/otimizadas/hero-galeria/03-quarto-420.avif 420w, assets/img/otimizadas/hero-galeria/03-quarto-600.avif 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px"><img src="assets/img/otimizadas/hero-galeria/03-quarto-420.webp" srcset="assets/img/otimizadas/hero-galeria/03-quarto-420.webp 420w, assets/img/otimizadas/hero-galeria/03-quarto-600.webp 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px" alt="" width="600" height="778" decoding="async"></picture></figure><figure><picture><source type="image/avif" srcset="assets/img/otimizadas/hero-galeria/03-cozinha-carvalho-420.avif 420w, assets/img/otimizadas/hero-galeria/03-cozinha-carvalho-600.avif 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px"><img src="assets/img/otimizadas/hero-galeria/03-cozinha-carvalho-420.webp" srcset="assets/img/otimizadas/hero-galeria/03-cozinha-carvalho-420.webp 420w, assets/img/otimizadas/hero-galeria/03-cozinha-carvalho-600.webp 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px" alt="" width="600" height="778" decoding="async"></picture></figure><figure><picture><source type="image/avif" srcset="assets/img/otimizadas/hero-galeria/04-home-office-420.avif 420w, assets/img/otimizadas/hero-galeria/04-home-office-600.avif 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px"><img src="assets/img/otimizadas/hero-galeria/04-home-office-420.webp" srcset="assets/img/otimizadas/hero-galeria/04-home-office-420.webp 420w, assets/img/otimizadas/hero-galeria/04-home-office-600.webp 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px" alt="" width="600" height="778" decoding="async"></picture></figure></div>
+<div class="hero__fileira"><figure><picture><source type="image/avif" srcset="assets/img/otimizadas/hero-galeria/02-closet-420.avif 420w, assets/img/otimizadas/hero-galeria/02-closet-600.avif 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px"><img src="assets/img/otimizadas/hero-galeria/02-closet-420.webp" srcset="assets/img/otimizadas/hero-galeria/02-closet-420.webp 420w, assets/img/otimizadas/hero-galeria/02-closet-600.webp 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px" alt="" width="600" height="778" decoding="async"></picture></figure><figure><picture><source type="image/avif" srcset="assets/img/otimizadas/hero-galeria/01-cozinha-nogueira-420.avif 420w, assets/img/otimizadas/hero-galeria/01-cozinha-nogueira-600.avif 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px"><img src="assets/img/otimizadas/hero-galeria/01-cozinha-nogueira-420.webp" srcset="assets/img/otimizadas/hero-galeria/01-cozinha-nogueira-420.webp 420w, assets/img/otimizadas/hero-galeria/01-cozinha-nogueira-600.webp 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px" alt="" width="600" height="778" decoding="async"></picture></figure><figure><picture><source type="image/avif" srcset="assets/img/otimizadas/hero-galeria/05-sala-420.avif 420w, assets/img/otimizadas/hero-galeria/05-sala-600.avif 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px"><img src="assets/img/otimizadas/hero-galeria/05-sala-420.webp" srcset="assets/img/otimizadas/hero-galeria/05-sala-420.webp 420w, assets/img/otimizadas/hero-galeria/05-sala-600.webp 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px" alt="" width="600" height="778" decoding="async"></picture></figure><figure><picture><source type="image/avif" srcset="assets/img/otimizadas/hero-galeria/03-quarto-420.avif 420w, assets/img/otimizadas/hero-galeria/03-quarto-600.avif 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px"><img src="assets/img/otimizadas/hero-galeria/03-quarto-420.webp" srcset="assets/img/otimizadas/hero-galeria/03-quarto-420.webp 420w, assets/img/otimizadas/hero-galeria/03-quarto-600.webp 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px" alt="" width="600" height="778" decoding="async"></picture></figure><figure><picture><source type="image/avif" srcset="assets/img/otimizadas/hero-galeria/03-cozinha-carvalho-420.avif 420w, assets/img/otimizadas/hero-galeria/03-cozinha-carvalho-600.avif 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px"><img src="assets/img/otimizadas/hero-galeria/03-cozinha-carvalho-420.webp" srcset="assets/img/otimizadas/hero-galeria/03-cozinha-carvalho-420.webp 420w, assets/img/otimizadas/hero-galeria/03-cozinha-carvalho-600.webp 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px" alt="" width="600" height="778" decoding="async"></picture></figure><figure><picture><source type="image/avif" srcset="assets/img/otimizadas/hero-galeria/04-home-office-420.avif 420w, assets/img/otimizadas/hero-galeria/04-home-office-600.avif 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px"><img src="assets/img/otimizadas/hero-galeria/04-home-office-420.webp" srcset="assets/img/otimizadas/hero-galeria/04-home-office-420.webp 420w, assets/img/otimizadas/hero-galeria/04-home-office-600.webp 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px" alt="" width="600" height="778" decoding="async"></picture></figure><figure><picture><source type="image/avif" srcset="assets/img/otimizadas/hero-galeria/04-sala-ripado-420.avif 420w, assets/img/otimizadas/hero-galeria/04-sala-ripado-600.avif 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px"><img src="assets/img/otimizadas/hero-galeria/04-sala-ripado-420.webp" srcset="assets/img/otimizadas/hero-galeria/04-sala-ripado-420.webp 420w, assets/img/otimizadas/hero-galeria/04-sala-ripado-600.webp 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px" alt="" width="600" height="778" decoding="async"></picture></figure><figure><picture><source type="image/avif" srcset="assets/img/otimizadas/hero-galeria/00-ambientes-420.avif 420w, assets/img/otimizadas/hero-galeria/00-ambientes-600.avif 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px"><img src="assets/img/otimizadas/hero-galeria/00-ambientes-420.webp" srcset="assets/img/otimizadas/hero-galeria/00-ambientes-420.webp 420w, assets/img/otimizadas/hero-galeria/00-ambientes-600.webp 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px" alt="" width="600" height="778" decoding="async"></picture></figure><figure><picture><source type="image/avif" srcset="assets/img/otimizadas/hero-galeria/01-cozinha-420.avif 420w, assets/img/otimizadas/hero-galeria/01-cozinha-600.avif 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px"><img src="assets/img/otimizadas/hero-galeria/01-cozinha-420.webp" srcset="assets/img/otimizadas/hero-galeria/01-cozinha-420.webp 420w, assets/img/otimizadas/hero-galeria/01-cozinha-600.webp 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px" alt="" width="600" height="778" decoding="sync" fetchpriority="high"></picture></figure><figure><picture><source type="image/avif" srcset="assets/img/otimizadas/hero-galeria/02-sala-jantar-420.avif 420w, assets/img/otimizadas/hero-galeria/02-sala-jantar-600.avif 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px"><img src="assets/img/otimizadas/hero-galeria/02-sala-jantar-420.webp" srcset="assets/img/otimizadas/hero-galeria/02-sala-jantar-420.webp 420w, assets/img/otimizadas/hero-galeria/02-sala-jantar-600.webp 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px" alt="" width="600" height="778" decoding="async"></picture></figure><figure><picture><source type="image/avif" srcset="assets/img/otimizadas/hero-galeria/02-closet-420.avif 420w, assets/img/otimizadas/hero-galeria/02-closet-600.avif 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px"><img src="assets/img/otimizadas/hero-galeria/02-closet-420.webp" srcset="assets/img/otimizadas/hero-galeria/02-closet-420.webp 420w, assets/img/otimizadas/hero-galeria/02-closet-600.webp 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px" alt="" width="600" height="778" decoding="async"></picture></figure><figure><picture><source type="image/avif" srcset="assets/img/otimizadas/hero-galeria/01-cozinha-nogueira-420.avif 420w, assets/img/otimizadas/hero-galeria/01-cozinha-nogueira-600.avif 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px"><img src="assets/img/otimizadas/hero-galeria/01-cozinha-nogueira-420.webp" srcset="assets/img/otimizadas/hero-galeria/01-cozinha-nogueira-420.webp 420w, assets/img/otimizadas/hero-galeria/01-cozinha-nogueira-600.webp 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px" alt="" width="600" height="778" decoding="async"></picture></figure><figure><picture><source type="image/avif" srcset="assets/img/otimizadas/hero-galeria/05-sala-420.avif 420w, assets/img/otimizadas/hero-galeria/05-sala-600.avif 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px"><img src="assets/img/otimizadas/hero-galeria/05-sala-420.webp" srcset="assets/img/otimizadas/hero-galeria/05-sala-420.webp 420w, assets/img/otimizadas/hero-galeria/05-sala-600.webp 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px" alt="" width="600" height="778" decoding="async"></picture></figure><figure><picture><source type="image/avif" srcset="assets/img/otimizadas/hero-galeria/03-quarto-420.avif 420w, assets/img/otimizadas/hero-galeria/03-quarto-600.avif 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px"><img src="assets/img/otimizadas/hero-galeria/03-quarto-420.webp" srcset="assets/img/otimizadas/hero-galeria/03-quarto-420.webp 420w, assets/img/otimizadas/hero-galeria/03-quarto-600.webp 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px" alt="" width="600" height="778" decoding="async"></picture></figure><figure><picture><source type="image/avif" srcset="assets/img/otimizadas/hero-galeria/03-cozinha-carvalho-420.avif 420w, assets/img/otimizadas/hero-galeria/03-cozinha-carvalho-600.avif 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px"><img src="assets/img/otimizadas/hero-galeria/03-cozinha-carvalho-420.webp" srcset="assets/img/otimizadas/hero-galeria/03-cozinha-carvalho-420.webp 420w, assets/img/otimizadas/hero-galeria/03-cozinha-carvalho-600.webp 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px" alt="" width="600" height="778" decoding="async"></picture></figure><figure><picture><source type="image/avif" srcset="assets/img/otimizadas/hero-galeria/04-home-office-420.avif 420w, assets/img/otimizadas/hero-galeria/04-home-office-600.avif 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px"><img src="assets/img/otimizadas/hero-galeria/04-home-office-420.webp" srcset="assets/img/otimizadas/hero-galeria/04-home-office-420.webp 420w, assets/img/otimizadas/hero-galeria/04-home-office-600.webp 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px" alt="" width="600" height="778" decoding="async"></picture></figure><figure><picture><source type="image/avif" srcset="assets/img/otimizadas/hero-galeria/04-sala-ripado-420.avif 420w, assets/img/otimizadas/hero-galeria/04-sala-ripado-600.avif 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px"><img src="assets/img/otimizadas/hero-galeria/04-sala-ripado-420.webp" srcset="assets/img/otimizadas/hero-galeria/04-sala-ripado-420.webp 420w, assets/img/otimizadas/hero-galeria/04-sala-ripado-600.webp 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px" alt="" width="600" height="778" decoding="async"></picture></figure><figure><picture><source type="image/avif" srcset="assets/img/otimizadas/hero-galeria/00-ambientes-420.avif 420w, assets/img/otimizadas/hero-galeria/00-ambientes-600.avif 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px"><img src="assets/img/otimizadas/hero-galeria/00-ambientes-420.webp" srcset="assets/img/otimizadas/hero-galeria/00-ambientes-420.webp 420w, assets/img/otimizadas/hero-galeria/00-ambientes-600.webp 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px" alt="" width="600" height="778" decoding="async"></picture></figure><figure><picture><source type="image/avif" srcset="assets/img/otimizadas/hero-galeria/01-cozinha-420.avif 420w, assets/img/otimizadas/hero-galeria/01-cozinha-600.avif 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px"><img src="assets/img/otimizadas/hero-galeria/01-cozinha-420.webp" srcset="assets/img/otimizadas/hero-galeria/01-cozinha-420.webp 420w, assets/img/otimizadas/hero-galeria/01-cozinha-600.webp 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px" alt="" width="600" height="778" decoding="sync" fetchpriority="high"></picture></figure><figure><picture><source type="image/avif" srcset="assets/img/otimizadas/hero-galeria/02-sala-jantar-420.avif 420w, assets/img/otimizadas/hero-galeria/02-sala-jantar-600.avif 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px"><img src="assets/img/otimizadas/hero-galeria/02-sala-jantar-420.webp" srcset="assets/img/otimizadas/hero-galeria/02-sala-jantar-420.webp 420w, assets/img/otimizadas/hero-galeria/02-sala-jantar-600.webp 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px" alt="" width="600" height="778" decoding="async"></picture></figure></div>
+<div class="hero__fileira"><figure><picture><source type="image/avif" srcset="assets/img/otimizadas/hero-galeria/03-cozinha-carvalho-420.avif 420w, assets/img/otimizadas/hero-galeria/03-cozinha-carvalho-600.avif 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px"><img src="assets/img/otimizadas/hero-galeria/03-cozinha-carvalho-420.webp" srcset="assets/img/otimizadas/hero-galeria/03-cozinha-carvalho-420.webp 420w, assets/img/otimizadas/hero-galeria/03-cozinha-carvalho-600.webp 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px" alt="" width="600" height="778" decoding="async"></picture></figure><figure><picture><source type="image/avif" srcset="assets/img/otimizadas/hero-galeria/04-home-office-420.avif 420w, assets/img/otimizadas/hero-galeria/04-home-office-600.avif 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px"><img src="assets/img/otimizadas/hero-galeria/04-home-office-420.webp" srcset="assets/img/otimizadas/hero-galeria/04-home-office-420.webp 420w, assets/img/otimizadas/hero-galeria/04-home-office-600.webp 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px" alt="" width="600" height="778" decoding="async"></picture></figure><figure><picture><source type="image/avif" srcset="assets/img/otimizadas/hero-galeria/04-sala-ripado-420.avif 420w, assets/img/otimizadas/hero-galeria/04-sala-ripado-600.avif 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px"><img src="assets/img/otimizadas/hero-galeria/04-sala-ripado-420.webp" srcset="assets/img/otimizadas/hero-galeria/04-sala-ripado-420.webp 420w, assets/img/otimizadas/hero-galeria/04-sala-ripado-600.webp 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px" alt="" width="600" height="778" decoding="async"></picture></figure><figure><picture><source type="image/avif" srcset="assets/img/otimizadas/hero-galeria/00-ambientes-420.avif 420w, assets/img/otimizadas/hero-galeria/00-ambientes-600.avif 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px"><img src="assets/img/otimizadas/hero-galeria/00-ambientes-420.webp" srcset="assets/img/otimizadas/hero-galeria/00-ambientes-420.webp 420w, assets/img/otimizadas/hero-galeria/00-ambientes-600.webp 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px" alt="" width="600" height="778" decoding="async"></picture></figure><figure><picture><source type="image/avif" srcset="assets/img/otimizadas/hero-galeria/01-cozinha-420.avif 420w, assets/img/otimizadas/hero-galeria/01-cozinha-600.avif 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px"><img src="assets/img/otimizadas/hero-galeria/01-cozinha-420.webp" srcset="assets/img/otimizadas/hero-galeria/01-cozinha-420.webp 420w, assets/img/otimizadas/hero-galeria/01-cozinha-600.webp 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px" alt="" width="600" height="778" decoding="sync" fetchpriority="high"></picture></figure><figure><picture><source type="image/avif" srcset="assets/img/otimizadas/hero-galeria/02-sala-jantar-420.avif 420w, assets/img/otimizadas/hero-galeria/02-sala-jantar-600.avif 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px"><img src="assets/img/otimizadas/hero-galeria/02-sala-jantar-420.webp" srcset="assets/img/otimizadas/hero-galeria/02-sala-jantar-420.webp 420w, assets/img/otimizadas/hero-galeria/02-sala-jantar-600.webp 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px" alt="" width="600" height="778" decoding="async"></picture></figure><figure><picture><source type="image/avif" srcset="assets/img/otimizadas/hero-galeria/02-closet-420.avif 420w, assets/img/otimizadas/hero-galeria/02-closet-600.avif 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px"><img src="assets/img/otimizadas/hero-galeria/02-closet-420.webp" srcset="assets/img/otimizadas/hero-galeria/02-closet-420.webp 420w, assets/img/otimizadas/hero-galeria/02-closet-600.webp 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px" alt="" width="600" height="778" decoding="async"></picture></figure><figure><picture><source type="image/avif" srcset="assets/img/otimizadas/hero-galeria/01-cozinha-nogueira-420.avif 420w, assets/img/otimizadas/hero-galeria/01-cozinha-nogueira-600.avif 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px"><img src="assets/img/otimizadas/hero-galeria/01-cozinha-nogueira-420.webp" srcset="assets/img/otimizadas/hero-galeria/01-cozinha-nogueira-420.webp 420w, assets/img/otimizadas/hero-galeria/01-cozinha-nogueira-600.webp 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px" alt="" width="600" height="778" decoding="async"></picture></figure><figure><picture><source type="image/avif" srcset="assets/img/otimizadas/hero-galeria/05-sala-420.avif 420w, assets/img/otimizadas/hero-galeria/05-sala-600.avif 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px"><img src="assets/img/otimizadas/hero-galeria/05-sala-420.webp" srcset="assets/img/otimizadas/hero-galeria/05-sala-420.webp 420w, assets/img/otimizadas/hero-galeria/05-sala-600.webp 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px" alt="" width="600" height="778" decoding="async"></picture></figure><figure><picture><source type="image/avif" srcset="assets/img/otimizadas/hero-galeria/03-quarto-420.avif 420w, assets/img/otimizadas/hero-galeria/03-quarto-600.avif 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px"><img src="assets/img/otimizadas/hero-galeria/03-quarto-420.webp" srcset="assets/img/otimizadas/hero-galeria/03-quarto-420.webp 420w, assets/img/otimizadas/hero-galeria/03-quarto-600.webp 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px" alt="" width="600" height="778" decoding="async"></picture></figure><figure><picture><source type="image/avif" srcset="assets/img/otimizadas/hero-galeria/03-cozinha-carvalho-420.avif 420w, assets/img/otimizadas/hero-galeria/03-cozinha-carvalho-600.avif 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px"><img src="assets/img/otimizadas/hero-galeria/03-cozinha-carvalho-420.webp" srcset="assets/img/otimizadas/hero-galeria/03-cozinha-carvalho-420.webp 420w, assets/img/otimizadas/hero-galeria/03-cozinha-carvalho-600.webp 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px" alt="" width="600" height="778" decoding="async"></picture></figure><figure><picture><source type="image/avif" srcset="assets/img/otimizadas/hero-galeria/04-home-office-420.avif 420w, assets/img/otimizadas/hero-galeria/04-home-office-600.avif 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px"><img src="assets/img/otimizadas/hero-galeria/04-home-office-420.webp" srcset="assets/img/otimizadas/hero-galeria/04-home-office-420.webp 420w, assets/img/otimizadas/hero-galeria/04-home-office-600.webp 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px" alt="" width="600" height="778" decoding="async"></picture></figure><figure><picture><source type="image/avif" srcset="assets/img/otimizadas/hero-galeria/04-sala-ripado-420.avif 420w, assets/img/otimizadas/hero-galeria/04-sala-ripado-600.avif 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px"><img src="assets/img/otimizadas/hero-galeria/04-sala-ripado-420.webp" srcset="assets/img/otimizadas/hero-galeria/04-sala-ripado-420.webp 420w, assets/img/otimizadas/hero-galeria/04-sala-ripado-600.webp 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px" alt="" width="600" height="778" decoding="async"></picture></figure><figure><picture><source type="image/avif" srcset="assets/img/otimizadas/hero-galeria/00-ambientes-420.avif 420w, assets/img/otimizadas/hero-galeria/00-ambientes-600.avif 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px"><img src="assets/img/otimizadas/hero-galeria/00-ambientes-420.webp" srcset="assets/img/otimizadas/hero-galeria/00-ambientes-420.webp 420w, assets/img/otimizadas/hero-galeria/00-ambientes-600.webp 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px" alt="" width="600" height="778" decoding="async"></picture></figure><figure><picture><source type="image/avif" srcset="assets/img/otimizadas/hero-galeria/01-cozinha-420.avif 420w, assets/img/otimizadas/hero-galeria/01-cozinha-600.avif 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px"><img src="assets/img/otimizadas/hero-galeria/01-cozinha-420.webp" srcset="assets/img/otimizadas/hero-galeria/01-cozinha-420.webp 420w, assets/img/otimizadas/hero-galeria/01-cozinha-600.webp 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px" alt="" width="600" height="778" decoding="sync" fetchpriority="high"></picture></figure><figure><picture><source type="image/avif" srcset="assets/img/otimizadas/hero-galeria/02-sala-jantar-420.avif 420w, assets/img/otimizadas/hero-galeria/02-sala-jantar-600.avif 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px"><img src="assets/img/otimizadas/hero-galeria/02-sala-jantar-420.webp" srcset="assets/img/otimizadas/hero-galeria/02-sala-jantar-420.webp 420w, assets/img/otimizadas/hero-galeria/02-sala-jantar-600.webp 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px" alt="" width="600" height="778" decoding="async"></picture></figure><figure><picture><source type="image/avif" srcset="assets/img/otimizadas/hero-galeria/02-closet-420.avif 420w, assets/img/otimizadas/hero-galeria/02-closet-600.avif 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px"><img src="assets/img/otimizadas/hero-galeria/02-closet-420.webp" srcset="assets/img/otimizadas/hero-galeria/02-closet-420.webp 420w, assets/img/otimizadas/hero-galeria/02-closet-600.webp 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px" alt="" width="600" height="778" decoding="async"></picture></figure><figure><picture><source type="image/avif" srcset="assets/img/otimizadas/hero-galeria/01-cozinha-nogueira-420.avif 420w, assets/img/otimizadas/hero-galeria/01-cozinha-nogueira-600.avif 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px"><img src="assets/img/otimizadas/hero-galeria/01-cozinha-nogueira-420.webp" srcset="assets/img/otimizadas/hero-galeria/01-cozinha-nogueira-420.webp 420w, assets/img/otimizadas/hero-galeria/01-cozinha-nogueira-600.webp 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px" alt="" width="600" height="778" decoding="async"></picture></figure><figure><picture><source type="image/avif" srcset="assets/img/otimizadas/hero-galeria/05-sala-420.avif 420w, assets/img/otimizadas/hero-galeria/05-sala-600.avif 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px"><img src="assets/img/otimizadas/hero-galeria/05-sala-420.webp" srcset="assets/img/otimizadas/hero-galeria/05-sala-420.webp 420w, assets/img/otimizadas/hero-galeria/05-sala-600.webp 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px" alt="" width="600" height="778" decoding="async"></picture></figure><figure><picture><source type="image/avif" srcset="assets/img/otimizadas/hero-galeria/03-quarto-420.avif 420w, assets/img/otimizadas/hero-galeria/03-quarto-600.avif 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px"><img src="assets/img/otimizadas/hero-galeria/03-quarto-420.webp" srcset="assets/img/otimizadas/hero-galeria/03-quarto-420.webp 420w, assets/img/otimizadas/hero-galeria/03-quarto-600.webp 600w" sizes="(max-width: 720px) 210px, (max-width: 1625px) 24vw, 390px" alt="" width="600" height="778" decoding="async"></picture></figure></div>
+</div></div>
+          <div class="hero__veu" aria-hidden="true"></div>
+
+          <div class="hero__split" aria-hidden="true" data-split>
+            <div class="hero__metade"><div class="hero__mascara">
+              <figure><img data-intro-src="assets/img/ambientes-2026-10-18/01-cozinha.webp" alt="" width="1672" height="941"></figure>
+              <figure><img data-intro-src="assets/img/projetos-2026-10-21/02-sala-jantar.webp" alt="" width="1122" height="1402"></figure>
+            </div></div>
+            <div class="hero__metade"><div class="hero__mascara">
+              <figure><img data-intro-src="assets/img/projetos-2026-10-21/01-cozinha-nogueira.webp" alt="" width="1122" height="1402"></figure>
+              <figure><img data-intro-src="assets/img/ambientes-2026-10-18/05-sala.webp" alt="" width="1672" height="941"></figure>
+            </div></div>
+          </div>
+          <div class="hero__logo-intro" aria-hidden="true" data-logo-intro>
+            <img src="assets/marca/nazzan-logo-negativo.png" alt="" width="425" height="80">
+          </div>
+
+          <div class="hero__legenda" data-hero-legenda>
+            <h1 class="hero__titulo" id="hero-titulo" data-hero-titulo>Seu projeto<br> <em>sob medida</em>, pronto<br> na data combinada.</h1>
+            <div class="hero__lado">
+              <p class="hero__apoio">Sua casa como você sempre quis. Veja em 3D antes de fechar.</p>
+              <a class="btn btn--hero" href="#orcamento">
+                <span>Peça seu orçamento</span>
+                <svg width="16" height="16" aria-hidden="true" focusable="false"><use href="#seta"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="hero__cobre" aria-hidden="true" data-hero-cobre></div>
+        </section>
+        </div>
+
+        <div class="m9__orbita" aria-hidden="true">
+          <figure class="m9__item" data-slot="1" data-forma="02"><img data-orbita-src="assets/img/otimizadas/manifesto-filme/01-cozinha-carvalho-960.webp" data-orbita-srcset="assets/img/otimizadas/manifesto-filme/01-cozinha-carvalho-480.webp 480w, assets/img/otimizadas/manifesto-filme/01-cozinha-carvalho-960.webp 960w, assets/img/otimizadas/manifesto-filme/01-cozinha-carvalho-1440.webp 1440w, assets/img/otimizadas/manifesto-filme/01-cozinha-carvalho-1836.webp 1836w" sizes="(max-width: 720px) 180px, 300px" alt="" width="1837" height="856" loading="lazy" decoding="async"></figure>
+          <figure class="m9__item" data-slot="2" data-forma="03"><img data-orbita-src="assets/img/otimizadas/manifesto-filme/03-closet-carvalho-960.webp" data-orbita-srcset="assets/img/otimizadas/manifesto-filme/03-closet-carvalho-480.webp 480w, assets/img/otimizadas/manifesto-filme/03-closet-carvalho-960.webp 960w, assets/img/otimizadas/manifesto-filme/03-closet-carvalho-1440.webp 1440w, assets/img/otimizadas/manifesto-filme/03-closet-carvalho-1836.webp 1836w" sizes="(max-width: 720px) 180px, 300px" alt="" width="1836" height="857" loading="lazy" decoding="async"></figure>
+          <figure class="m9__item" data-slot="3" data-forma="04"><img data-orbita-src="assets/img/otimizadas/manifesto-filme/05-suite-carvalho-960.webp" data-orbita-srcset="assets/img/otimizadas/manifesto-filme/05-suite-carvalho-480.webp 480w, assets/img/otimizadas/manifesto-filme/05-suite-carvalho-960.webp 960w, assets/img/otimizadas/manifesto-filme/05-suite-carvalho-1440.webp 1440w, assets/img/otimizadas/manifesto-filme/05-suite-carvalho-1838.webp 1838w" sizes="(max-width: 720px) 180px, 300px" alt="" width="1837" height="856" loading="lazy" decoding="async"></figure>
+          <figure class="m9__item" data-slot="4" data-forma="05"><img data-orbita-src="assets/img/otimizadas/manifesto-filme/07-banho-travertino-960.webp" data-orbita-srcset="assets/img/otimizadas/manifesto-filme/07-banho-travertino-480.webp 480w, assets/img/otimizadas/manifesto-filme/07-banho-travertino-960.webp 960w, assets/img/otimizadas/manifesto-filme/07-banho-travertino-1440.webp 1440w, assets/img/otimizadas/manifesto-filme/07-banho-travertino-1837.webp 1837w" sizes="(max-width: 720px) 180px, 300px" alt="" width="1837" height="856" loading="lazy" decoding="async"></figure>
+          <figure class="m9__item" data-slot="5" data-forma="06"><img data-orbita-src="assets/img/otimizadas/manifesto-filme/06-home-office-carvalho-960.webp" data-orbita-srcset="assets/img/otimizadas/manifesto-filme/06-home-office-carvalho-480.webp 480w, assets/img/otimizadas/manifesto-filme/06-home-office-carvalho-960.webp 960w, assets/img/otimizadas/manifesto-filme/06-home-office-carvalho-1440.webp 1440w, assets/img/otimizadas/manifesto-filme/06-home-office-carvalho-1837.webp 1837w" sizes="(max-width: 720px) 180px, 300px" alt="" width="1837" height="856" loading="lazy" decoding="async"></figure>
+          <figure class="m9__item" data-slot="6" data-forma="07"><img data-orbita-src="assets/img/otimizadas/manifesto-filme/02-sala-biblioteca-960.webp" data-orbita-srcset="assets/img/otimizadas/manifesto-filme/02-sala-biblioteca-480.webp 480w, assets/img/otimizadas/manifesto-filme/02-sala-biblioteca-960.webp 960w, assets/img/otimizadas/manifesto-filme/02-sala-biblioteca-1440.webp 1440w, assets/img/otimizadas/manifesto-filme/02-sala-biblioteca-1836.webp 1836w" sizes="(max-width: 720px) 180px, 300px" alt="" width="1836" height="856" loading="lazy" decoding="async"></figure>
+        </div>
+
+        <!-- Imagem central: o vídeo da montagem (Seedance 1.5 Pro, 21/10/2026). Começa no ambiente vazio e, quando
+             a imagem se abre, a rolagem monta a sala e a cozinha. Sem JS ou com movimento reduzido, fica o ambiente pronto. -->
+        <figure class="m9__centro" data-centro>
+          <video class="m9__video" data-m9-video muted playsinline disablepictureinpicture preload="none" aria-label="Sala e cozinha vazias que se mobíliam com a rolagem: armários em nogueira, ilha em travertino, sofá claro e poltrona verde." poster="assets/img/otimizadas/hero-video/montagem-fim-960.webp" data-poster="assets/img/otimizadas/hero-video/montagem-inicio-960.webp" data-src="assets/video/montagem-1920.mp4" data-quadros="assets/video/montagem-quadros/" data-quadros-n="144" width="1920" height="1080"></video>
+        </figure>
+
+        <div class="m9__copia" data-copia="1">
+          <h2 class="m9__texto" id="manifesto-titulo" data-linhas><span class="mf__apagado">Móvel bonito todo mundo promete.</span> Nós prometemos a data.</h2>
+        </div>
+
+        <div class="m9__copia" data-copia="3">
+          <p class="m9__texto" data-linhas><span class="m9__suave">Quando a marcenaria atrasa, a obra inteira para.</span> Por isso, aqui, a data&nbsp;é&nbsp;compromisso.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3. Do projeto à montagem (protótipo 05): título e lista em acordeão à esquerda,
+         foto em meia tela à direita (ref.: Bloom). A seção fica presa e a rolagem
+         enche a linha de cada etapa e abre a seguinte. Números entre colchetes (ref.: Stanzza).
+         No celular (até 900px): foto presa no alto e lista embaixo, com trava (um gesto = uma etapa;
+         protótipo prototypes/processo-mobile-3.html). Vale também para Projetos e "O que definimos". -->
+    <div class="pr__pino" id="processo" data-pr-pino>
+    <div class="pr__split">
+      <div class="pr__lista-col">
+        <h3 class="pr__titulo" id="pr-titulo">Do projeto<br><span>à montagem.</span></h3>
+        <ol class="pr__lista" data-pr-lista>
+          <li class="pr__etapa is-aberta" data-pr-etapa>
+            <span class="pr__linha" aria-hidden="true"><i></i></span>
+            <h4>
+              <button type="button" class="pr__gatilho" aria-expanded="true" aria-controls="pr-painel-1" id="pr-botao-1">
+                <span class="pr__num" aria-hidden="true">[ 01 ]</span>
+                <span class="pr__nome">Conversa e medição</span>
+              </button>
+            </h4>
+            <div class="pr__painel" id="pr-painel-1" role="region" aria-labelledby="pr-botao-1">
+              <div class="pr__painel-in">
+                <p>Entendemos sua rotina e medimos o espaço.</p>
+                <figure class="pr__foto-movel"><img src="assets/img/otimizadas/processo-2026-10-20/01-conversa-medicao-960.webp" srcset="assets/img/otimizadas/processo-2026-10-20/01-conversa-medicao-480.webp 480w, assets/img/otimizadas/processo-2026-10-20/01-conversa-medicao-960.webp 960w, assets/img/otimizadas/processo-2026-10-20/01-conversa-medicao-1122.webp 1122w" sizes="(max-width: 900px) 100vw, 50vw" alt="Mãos medindo um nicho com trena, com planta e amostras de acabamento sobre a bancada" width="1122" height="1402" loading="lazy" decoding="async"></figure>
+              </div>
+            </div>
+          </li>
+          <li class="pr__etapa" data-pr-etapa>
+            <span class="pr__linha" aria-hidden="true"><i></i></span>
+            <h4>
+              <button type="button" class="pr__gatilho" aria-expanded="false" aria-controls="pr-painel-2" id="pr-botao-2">
+                <span class="pr__num" aria-hidden="true">[ 02 ]</span>
+                <span class="pr__nome">Projeto 3D</span>
+              </button>
+            </h4>
+            <div class="pr__painel" id="pr-painel-2" role="region" aria-labelledby="pr-botao-2">
+              <div class="pr__painel-in">
+                <p>Você vê tudo antes de assinar.</p>
+                <figure class="pr__foto-movel"><img src="assets/img/otimizadas/processo-2026-10-20/02-projeto-3d-960.webp" srcset="assets/img/otimizadas/processo-2026-10-20/02-projeto-3d-480.webp 480w, assets/img/otimizadas/processo-2026-10-20/02-projeto-3d-960.webp 960w, assets/img/otimizadas/processo-2026-10-20/02-projeto-3d-1122.webp 1122w" sizes="(max-width: 900px) 100vw, 50vw" alt="Projeto de cozinha em 3D na tela, acompanhado de planta e amostras de madeira" width="1122" height="1402" loading="lazy" decoding="async" style="object-position:50% 35%"></figure>
+              </div>
+            </div>
+          </li>
+          <li class="pr__etapa" data-pr-etapa>
+            <span class="pr__linha" aria-hidden="true"><i></i></span>
+            <h4>
+              <button type="button" class="pr__gatilho" aria-expanded="false" aria-controls="pr-painel-3" id="pr-botao-3">
+                <span class="pr__num" aria-hidden="true">[ 03 ]</span>
+                <span class="pr__nome">Data no contrato</span>
+              </button>
+            </h4>
+            <div class="pr__painel" id="pr-painel-3" role="region" aria-labelledby="pr-botao-3">
+              <div class="pr__painel-in">
+                <p>O prazo fica por escrito. <sup class="val">validar</sup></p>
+                <figure class="pr__foto-movel"><img src="assets/img/otimizadas/processo-2026-10-20/03-data-contrato-960.webp" srcset="assets/img/otimizadas/processo-2026-10-20/03-data-contrato-480.webp 480w, assets/img/otimizadas/processo-2026-10-20/03-data-contrato-960.webp 960w, assets/img/otimizadas/processo-2026-10-20/03-data-contrato-1122.webp 1122w" sizes="(max-width: 900px) 100vw, 50vw" alt="Assinatura de contrato com o prazo de entrega registrado no documento" width="1122" height="1402" loading="lazy" decoding="async"></figure>
+              </div>
+            </div>
+          </li>
+          <li class="pr__etapa" data-pr-etapa>
+            <span class="pr__linha" aria-hidden="true"><i></i></span>
+            <h4>
+              <button type="button" class="pr__gatilho" aria-expanded="false" aria-controls="pr-painel-4" id="pr-botao-4">
+                <span class="pr__num" aria-hidden="true">[ 04 ]</span>
+                <span class="pr__nome">Produção acompanhada</span>
+              </button>
+            </h4>
+            <div class="pr__painel" id="pr-painel-4" role="region" aria-labelledby="pr-botao-4">
+              <div class="pr__painel-in">
+                <p>Cronograma por etapa e fotos de cada fase. <sup class="val">validar</sup></p>
+                <figure class="pr__foto-movel"><img src="assets/img/otimizadas/processo-2026-10-21/04-producao-acompanhada-premium-960.webp" srcset="assets/img/otimizadas/processo-2026-10-21/04-producao-acompanhada-premium-480.webp 480w, assets/img/otimizadas/processo-2026-10-21/04-producao-acompanhada-premium-960.webp 960w, assets/img/otimizadas/processo-2026-10-21/04-producao-acompanhada-premium-1122.webp 1122w" sizes="(max-width: 900px) 100vw, 50vw" alt="Mãos registrando com tablet a produção de um móvel de nogueira com canto curvo em uma bancada protegida" width="1122" height="1402" loading="lazy" decoding="async"></figure>
+              </div>
+            </div>
+          </li>
+          <li class="pr__etapa" data-pr-etapa>
+            <span class="pr__linha" aria-hidden="true"><i></i></span>
+            <h4>
+              <button type="button" class="pr__gatilho" aria-expanded="false" aria-controls="pr-painel-5" id="pr-botao-5">
+                <span class="pr__num" aria-hidden="true">[ 05 ]</span>
+                <span class="pr__nome">Montagem caprichada</span>
+              </button>
+            </h4>
+            <div class="pr__painel" id="pr-painel-5" role="region" aria-labelledby="pr-botao-5">
+              <div class="pr__painel-in">
+                <p>Cuidado com o imóvel e limpeza no final.</p>
+                <figure class="pr__foto-movel"><img src="assets/img/otimizadas/processo-2026-10-21/05-montagem-caprichada-premium-960.webp" srcset="assets/img/otimizadas/processo-2026-10-21/05-montagem-caprichada-premium-480.webp 480w, assets/img/otimizadas/processo-2026-10-21/05-montagem-caprichada-premium-960.webp 960w, assets/img/otimizadas/processo-2026-10-21/05-montagem-caprichada-premium-1122.webp 1122w" sizes="(max-width: 900px) 100vw, 50vw" alt="Mãos encaixando uma gaveta em móvel de nogueira, com o piso protegido e ferramentas organizadas" width="1122" height="1402" loading="lazy" decoding="async" style="object-position:50% 35%"></figure>
+              </div>
+            </div>
+          </li>
+        </ol>
+
+      </div>
+
+      <!-- Foto em meia tela, de ponta a ponta à direita: troca com a etapa aberta -->
+      <div class="pr__fotos" aria-hidden="true" data-pr-fotos>
+        <figure class="pr__foto is-ativa"><img src="assets/img/otimizadas/processo-2026-10-20/01-conversa-medicao-960.webp" srcset="assets/img/otimizadas/processo-2026-10-20/01-conversa-medicao-480.webp 480w, assets/img/otimizadas/processo-2026-10-20/01-conversa-medicao-960.webp 960w, assets/img/otimizadas/processo-2026-10-20/01-conversa-medicao-1122.webp 1122w" sizes="(max-width: 900px) 100vw, 50vw" alt="" width="1122" height="1402" decoding="async" loading="lazy"></figure>
+        <figure class="pr__foto"><img src="assets/img/otimizadas/processo-2026-10-20/02-projeto-3d-960.webp" srcset="assets/img/otimizadas/processo-2026-10-20/02-projeto-3d-480.webp 480w, assets/img/otimizadas/processo-2026-10-20/02-projeto-3d-960.webp 960w, assets/img/otimizadas/processo-2026-10-20/02-projeto-3d-1122.webp 1122w" sizes="(max-width: 900px) 100vw, 50vw" alt="" width="1122" height="1402" loading="lazy" decoding="async"></figure>
+        <figure class="pr__foto"><img src="assets/img/otimizadas/processo-2026-10-20/03-data-contrato-960.webp" srcset="assets/img/otimizadas/processo-2026-10-20/03-data-contrato-480.webp 480w, assets/img/otimizadas/processo-2026-10-20/03-data-contrato-960.webp 960w, assets/img/otimizadas/processo-2026-10-20/03-data-contrato-1122.webp 1122w" sizes="(max-width: 900px) 100vw, 50vw" alt="" width="1122" height="1402" loading="lazy" decoding="async"></figure>
+        <figure class="pr__foto"><img src="assets/img/otimizadas/processo-2026-10-21/04-producao-acompanhada-premium-960.webp" srcset="assets/img/otimizadas/processo-2026-10-21/04-producao-acompanhada-premium-480.webp 480w, assets/img/otimizadas/processo-2026-10-21/04-producao-acompanhada-premium-960.webp 960w, assets/img/otimizadas/processo-2026-10-21/04-producao-acompanhada-premium-1122.webp 1122w" sizes="(max-width: 900px) 100vw, 50vw" alt="" width="1122" height="1402" loading="lazy" decoding="async"></figure>
+        <figure class="pr__foto"><img src="assets/img/otimizadas/processo-2026-10-21/05-montagem-caprichada-premium-960.webp" srcset="assets/img/otimizadas/processo-2026-10-21/05-montagem-caprichada-premium-480.webp 480w, assets/img/otimizadas/processo-2026-10-21/05-montagem-caprichada-premium-960.webp 960w, assets/img/otimizadas/processo-2026-10-21/05-montagem-caprichada-premium-1122.webp 1122w" sizes="(max-width: 900px) 100vw, 50vw" alt="" width="1122" height="1402" loading="lazy" decoding="async"></figure>
+        <p class="pr__legenda"><span data-pr-legenda>[ 01 ] Conversa e medição</span></p>
+        <p class="pr__contador"><b data-pr-n>01</b> <span>/ 05</span></p>
+        <span class="pr__progresso"><i></i></span>
+      </div>
+    </div>
+    </div>
+
+    <!-- Fecho -->
+    <div class="mf__grade mf__fecho">
+      <div class="fv fv--prazo" id="compromisso" data-reveal>
+        <div class="fv__planos" aria-hidden="true"><i></i><i></i><i></i></div>
+        <div class="fv__vidro">
+          <p class="fv__vidro__frase">Só prometemos a <em>data</em> <span>que conseguimos cumprir.</span></p>
+          <div class="fv__vidro__acao">
+            <a class="fv__convite" href="#orcamento"><span>Peça seu orçamento</span><span class="fv__convite__circulo"><svg aria-hidden="true" focusable="false"><use href="#seta"/></svg></span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 3. AMBIENTES: ficha compacta (protótipo ambientes-ficha) ============
+       A rolagem troca as fotos por fusão; a ficha de vidro fica parada à direita e só troca o texto. -->
+  <section class="amb" id="ambientes" aria-labelledby="ambientes-titulo" data-amb style="--n:6">
+    <h2 class="sr" id="ambientes-titulo">Ambientes: do primeiro armário à casa inteira</h2>
+    <div class="amb__palco" data-amb-palco>
+    <article class="amb__painel" aria-label="Ambientes, 1 de 6">
+      <figure class="amb__foto" aria-hidden="true"><img src="assets/img/otimizadas/ambientes-2026-10-18/00-ambientes-960.webp" srcset="assets/img/otimizadas/ambientes-2026-10-18/00-ambientes-480.webp 480w, assets/img/otimizadas/ambientes-2026-10-18/00-ambientes-960.webp 960w, assets/img/otimizadas/ambientes-2026-10-18/00-ambientes-1440.webp 1440w, assets/img/otimizadas/ambientes-2026-10-18/00-ambientes-1672.webp 1672w" sizes="100vw" alt="" width="1672" height="941" fetchpriority="high" draggable="false" loading="lazy" decoding="async"></figure>
+      <div class="amb__ficha">
+        <div class="amb__ficha-topo">
+          <p class="amb__rotulo">Ambientes sob medida</p>
+          <span class="amb__contador" aria-label="Ambiente 1 de 6">01 <span>/ 06</span></span>
+        </div>
+        <h3 class="amb__nome">Ambientes</h3>
+        <p class="amb__descricao">Do primeiro armário à casa inteira.</p>
+        <span class="amb__progresso" aria-hidden="true"><i></i></span>
+        <div class="amb__revelacao">
+          <div class="amb__recorte">
+            <div class="amb__itens">
+              <p class="amb__item"><span>Comece por um ambiente ou resolva a casa toda, num só cronograma.</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="amb__base"><a class="amb__pedido" href="#orcamento">Quero meu projeto ↗</a></div>
+      </div>
+    </article>
+    <article class="amb__painel" aria-label="Cozinha, 2 de 6">
+      <figure class="amb__foto" aria-hidden="true"><img src="assets/img/otimizadas/ambientes-2026-10-18/01-cozinha-960.webp" srcset="assets/img/otimizadas/ambientes-2026-10-18/01-cozinha-480.webp 480w, assets/img/otimizadas/ambientes-2026-10-18/01-cozinha-960.webp 960w, assets/img/otimizadas/ambientes-2026-10-18/01-cozinha-1440.webp 1440w, assets/img/otimizadas/ambientes-2026-10-18/01-cozinha-1672.webp 1672w" sizes="100vw" alt="" width="1672" height="941" loading="lazy" draggable="false" decoding="async"></figure>
+      <div class="amb__ficha">
+        <div class="amb__ficha-topo">
+          <p class="amb__rotulo">Ambientes sob medida</p>
+          <span class="amb__contador" aria-label="Ambiente 2 de 6">02 <span>/ 06</span></span>
+        </div>
+        <h3 class="amb__nome">Cozinha</h3>
+        <p class="amb__descricao">Cada centímetro aproveitado. <sup class="val">validar itens</sup></p>
+        <span class="amb__progresso" aria-hidden="true"><i></i></span>
+        <div class="amb__revelacao">
+          <div class="amb__recorte">
+            <div class="amb__itens">
+              <p class="amb__item"><b>Ilha</b><span>com bancada e banquetas</span></p>
+              <p class="amb__item"><b>Torre</b><span>de fornos e despensa</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="amb__base"><a class="amb__pedido" href="#orcamento" data-escolher="Cozinha">Quero minha cozinha ↗</a></div>
+      </div>
+    </article>
+    <article class="amb__painel" aria-label="Closet, 3 de 6">
+      <figure class="amb__foto" aria-hidden="true"><img src="assets/img/otimizadas/ambientes-2026-10-18/02-closet-960.webp" srcset="assets/img/otimizadas/ambientes-2026-10-18/02-closet-480.webp 480w, assets/img/otimizadas/ambientes-2026-10-18/02-closet-960.webp 960w, assets/img/otimizadas/ambientes-2026-10-18/02-closet-1440.webp 1440w, assets/img/otimizadas/ambientes-2026-10-18/02-closet-1672.webp 1672w" sizes="100vw" alt="" width="1672" height="940" loading="lazy" draggable="false" decoding="async"></figure>
+      <div class="amb__ficha">
+        <div class="amb__ficha-topo">
+          <p class="amb__rotulo">Ambientes sob medida</p>
+          <span class="amb__contador" aria-label="Ambiente 3 de 6">03 <span>/ 06</span></span>
+        </div>
+        <h3 class="amb__nome">Closet</h3>
+        <p class="amb__descricao">Um lugar certo para cada coisa. <sup class="val">validar itens</sup></p>
+        <span class="amb__progresso" aria-hidden="true"><i></i></span>
+        <div class="amb__revelacao">
+          <div class="amb__recorte">
+            <div class="amb__itens">
+              <p class="amb__item"><b>Portas</b><span>de correr ou de giro</span></p>
+              <p class="amb__item"><b>Gavetas</b><span>com divisórias internas</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="amb__base"><a class="amb__pedido" href="#orcamento" data-escolher="Closet">Quero meu closet ↗</a></div>
+      </div>
+    </article>
+    <article class="amb__painel" aria-label="Quarto, 4 de 6">
+      <figure class="amb__foto" aria-hidden="true"><img src="assets/img/otimizadas/ambientes-2026-10-18/03-quarto-960.webp" srcset="assets/img/otimizadas/ambientes-2026-10-18/03-quarto-480.webp 480w, assets/img/otimizadas/ambientes-2026-10-18/03-quarto-960.webp 960w, assets/img/otimizadas/ambientes-2026-10-18/03-quarto-1440.webp 1440w, assets/img/otimizadas/ambientes-2026-10-18/03-quarto-1672.webp 1672w" sizes="100vw" alt="" width="1672" height="941" loading="lazy" draggable="false" decoding="async"></figure>
+      <div class="amb__ficha">
+        <div class="amb__ficha-topo">
+          <p class="amb__rotulo">Ambientes sob medida</p>
+          <span class="amb__contador" aria-label="Ambiente 4 de 6">04 <span>/ 06</span></span>
+        </div>
+        <h3 class="amb__nome">Quarto</h3>
+        <p class="amb__descricao">Calma e organização. <sup class="val">validar itens</sup></p>
+        <span class="amb__progresso" aria-hidden="true"><i></i></span>
+        <div class="amb__revelacao">
+          <div class="amb__recorte">
+            <div class="amb__itens">
+              <p class="amb__item"><b>Painel</b><span>de cabeceira com luz embutida</span></p>
+              <p class="amb__item"><b>Armário</b><span>do piso ao teto</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="amb__base"><a class="amb__pedido" href="#orcamento" data-escolher="Quarto">Quero meu quarto ↗</a></div>
+      </div>
+    </article>
+    <article class="amb__painel" aria-label="Home office, 5 de 6">
+      <figure class="amb__foto" aria-hidden="true"><img src="assets/img/otimizadas/ambientes-2026-10-18/04-home-office-960.webp" srcset="assets/img/otimizadas/ambientes-2026-10-18/04-home-office-480.webp 480w, assets/img/otimizadas/ambientes-2026-10-18/04-home-office-960.webp 960w, assets/img/otimizadas/ambientes-2026-10-18/04-home-office-1440.webp 1440w, assets/img/otimizadas/ambientes-2026-10-18/04-home-office-1672.webp 1672w" sizes="100vw" alt="" width="1672" height="941" loading="lazy" draggable="false" decoding="async"></figure>
+      <div class="amb__ficha">
+        <div class="amb__ficha-topo">
+          <p class="amb__rotulo">Ambientes sob medida</p>
+          <span class="amb__contador" aria-label="Ambiente 5 de 6">05 <span>/ 06</span></span>
+        </div>
+        <h3 class="amb__nome">Home office</h3>
+        <p class="amb__descricao">Trabalho com tudo no lugar. <sup class="val">validar itens</sup></p>
+        <span class="amb__progresso" aria-hidden="true"><i></i></span>
+        <div class="amb__revelacao">
+          <div class="amb__recorte">
+            <div class="amb__itens">
+              <p class="amb__item"><b>Bancada</b><span>com passagem de fios</span></p>
+              <p class="amb__item"><b>Estante</b><span>aberta e fechada</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="amb__base"><a class="amb__pedido" href="#orcamento" data-escolher="Home office">Quero meu home office ↗</a></div>
+      </div>
+    </article>
+    <article class="amb__painel" aria-label="Sala, 6 de 6">
+      <figure class="amb__foto" aria-hidden="true"><img src="assets/img/otimizadas/ambientes-2026-10-18/05-sala-960.webp" srcset="assets/img/otimizadas/ambientes-2026-10-18/05-sala-480.webp 480w, assets/img/otimizadas/ambientes-2026-10-18/05-sala-960.webp 960w, assets/img/otimizadas/ambientes-2026-10-18/05-sala-1440.webp 1440w, assets/img/otimizadas/ambientes-2026-10-18/05-sala-1672.webp 1672w" sizes="100vw" alt="" width="1672" height="941" loading="lazy" draggable="false" decoding="async"></figure>
+      <div class="amb__ficha">
+        <div class="amb__ficha-topo">
+          <p class="amb__rotulo">Ambientes sob medida</p>
+          <span class="amb__contador" aria-label="Ambiente 6 de 6">06 <span>/ 06</span></span>
+        </div>
+        <h3 class="amb__nome">Sala</h3>
+        <p class="amb__descricao">O que não precisa aparecer, escondido. <sup class="val">validar itens</sup></p>
+        <span class="amb__progresso" aria-hidden="true"><i></i></span>
+        <div class="amb__revelacao">
+          <div class="amb__recorte">
+            <div class="amb__itens">
+              <p class="amb__item"><b>Painel</b><span>para TV, com fios ocultos</span></p>
+              <p class="amb__item"><b>Ripado</b><span>que esconde portas</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="amb__base"><a class="amb__pedido" href="#orcamento" data-escolher="Sala">Quero minha sala ↗</a></div>
+      </div>
+    </article>
+    <span class="amb__dica" aria-hidden="true">Role para explorar ↓</span>
+    <p class="sr" role="status" aria-live="polite" aria-atomic="true" data-amb-status></p>
+    </div>
+  </section>
+
+  <!-- ============ 4. PROJETOS (protótipo projetos-02, desde 18/10/2026) ============
+       O mesmo bloco do "Do projeto à montagem" (protótipo 05, ref.: Bloom): título dentro da coluna,
+       lista em acordeão com [ 01 ] e foto em meia tela à direita. No desktop a seção fica presa e a
+       rolagem enche a linha de cada projeto e abre o seguinte; no celular, foto presa e um gesto por projeto. -->
+  <section class="projetos pj" id="projetos" aria-labelledby="projetos-titulo">
+    <div class="pr__pino pj__pino" style="--n:4" data-pr-pino>
+    <div class="pr__split">
+      <div class="pr__lista-col">
+        <h2 class="pr__titulo" id="projetos-titulo">Projetos entregues.<br><span>No&nbsp;prazo.</span></h2>
+        <ol class="pr__lista" data-pr-lista>
+          <li class="pr__etapa is-aberta" data-pr-etapa>
+            <span class="pr__linha" aria-hidden="true"><i></i></span>
+            <h3>
+              <button type="button" class="pr__gatilho" aria-expanded="true" aria-controls="pj-painel-1" id="pj-botao-1">
+                <span class="pr__num" aria-hidden="true">[ 01 ]</span>
+                <span class="pr__nome">Cozinha em nogueira</span>
+              </button>
+            </h3>
+            <div class="pr__painel" id="pj-painel-1" role="region" aria-labelledby="pj-botao-1">
+              <div class="pr__painel-in">
+                <p>Cozinha com duas ilhas. Lâmina de nogueira, bancada clara e luz embutida nos armários. <span class="pj__dados pend" data-pend>[Bairro] · [X] semanas</span></p>
+                <figure class="pr__foto-movel"><img src="assets/img/otimizadas/projetos-2026-10-21/01-cozinha-nogueira-960.webp" srcset="assets/img/otimizadas/projetos-2026-10-21/01-cozinha-nogueira-480.webp 480w, assets/img/otimizadas/projetos-2026-10-21/01-cozinha-nogueira-960.webp 960w, assets/img/otimizadas/projetos-2026-10-21/01-cozinha-nogueira-1122.webp 1122w" sizes="(max-width: 900px) 100vw, 50vw" alt="Cozinha em nogueira com duas ilhas, bancadas claras e iluminação embutida nos armários" width="1122" height="1402" loading="lazy" decoding="async" style="object-position:50% 50%"></figure>
+              </div>
+            </div>
+          </li>
+          <li class="pr__etapa" data-pr-etapa>
+            <span class="pr__linha" aria-hidden="true"><i></i></span>
+            <h3>
+              <button type="button" class="pr__gatilho" aria-expanded="false" aria-controls="pj-painel-2" id="pj-botao-2">
+                <span class="pr__num" aria-hidden="true">[ 02 ]</span>
+                <span class="pr__nome">Sala de jantar</span>
+              </button>
+            </h3>
+            <div class="pr__painel" id="pj-painel-2" role="region" aria-labelledby="pj-botao-2">
+              <div class="pr__painel-in">
+                <p>Armários em madeira, cristaleira e parede de tijolo. <span class="pj__dados pend" data-pend>[Bairro] · [X] semanas</span></p>
+                <figure class="pr__foto-movel"><img src="assets/img/otimizadas/projetos-2026-10-21/02-sala-jantar-960.webp" srcset="assets/img/otimizadas/projetos-2026-10-21/02-sala-jantar-480.webp 480w, assets/img/otimizadas/projetos-2026-10-21/02-sala-jantar-960.webp 960w, assets/img/otimizadas/projetos-2026-10-21/02-sala-jantar-1122.webp 1122w" sizes="(max-width: 900px) 100vw, 50vw" alt="Sala de jantar com mesa de madeira, armários, cristaleira iluminada e parede de tijolo" width="1122" height="1402" loading="lazy" decoding="async" style="object-position:50% 50%"></figure>
+              </div>
+            </div>
+          </li>
+          <li class="pr__etapa" data-pr-etapa>
+            <span class="pr__linha" aria-hidden="true"><i></i></span>
+            <h3>
+              <button type="button" class="pr__gatilho" aria-expanded="false" aria-controls="pj-painel-3" id="pj-botao-3">
+                <span class="pr__num" aria-hidden="true">[ 03 ]</span>
+                <span class="pr__nome">Cozinha em carvalho</span>
+              </button>
+            </h3>
+            <div class="pr__painel" id="pj-painel-3" role="region" aria-labelledby="pj-botao-3">
+              <div class="pr__painel-in">
+                <p>Cozinha clara em carvalho, com ilha e banquetas. <span class="pj__dados pend" data-pend>[Bairro] · [X] semanas</span></p>
+                <figure class="pr__foto-movel"><img src="assets/img/otimizadas/projetos-2026-10-21/03-cozinha-carvalho-960.webp" srcset="assets/img/otimizadas/projetos-2026-10-21/03-cozinha-carvalho-480.webp 480w, assets/img/otimizadas/projetos-2026-10-21/03-cozinha-carvalho-960.webp 960w, assets/img/otimizadas/projetos-2026-10-21/03-cozinha-carvalho-1122.webp 1122w" sizes="(max-width: 900px) 100vw, 50vw" alt="Cozinha em carvalho claro com ilha de canto arredondado, bancada clara e três banquetas" width="1122" height="1402" loading="lazy" decoding="async" style="object-position:50% 50%"></figure>
+              </div>
+            </div>
+          </li>
+          <li class="pr__etapa" data-pr-etapa>
+            <span class="pr__linha" aria-hidden="true"><i></i></span>
+            <h3>
+              <button type="button" class="pr__gatilho" aria-expanded="false" aria-controls="pj-painel-4" id="pj-botao-4">
+                <span class="pr__num" aria-hidden="true">[ 04 ]</span>
+                <span class="pr__nome">Sala com ripado</span>
+              </button>
+            </h3>
+            <div class="pr__painel" id="pj-painel-4" role="region" aria-labelledby="pj-botao-4">
+              <div class="pr__painel-in">
+                <p>Paredes em ripado de madeira e mesa junto à janela. <span class="pj__dados pend" data-pend>[Bairro] · [X] semanas</span></p>
+                <figure class="pr__foto-movel"><img src="assets/img/otimizadas/projetos-2026-10-21/04-sala-ripado-960.webp" srcset="assets/img/otimizadas/projetos-2026-10-21/04-sala-ripado-480.webp 480w, assets/img/otimizadas/projetos-2026-10-21/04-sala-ripado-960.webp 960w, assets/img/otimizadas/projetos-2026-10-21/04-sala-ripado-1122.webp 1122w" sizes="(max-width: 900px) 100vw, 50vw" alt="Sala com parede de madeira ripada, armário com nicho iluminado e mesa junto à janela" width="1122" height="1402" loading="lazy" decoding="async" style="object-position:50% 50%"></figure>
+              </div>
+            </div>
+          </li>
+        </ol>
+      </div>
+
+      <!-- Foto em meia tela, de ponta a ponta à direita: troca com o projeto aberto -->
+      <div class="pr__fotos" aria-hidden="true" data-pr-fotos>
+        <figure class="pr__foto is-ativa"><img src="assets/img/otimizadas/projetos-2026-10-21/01-cozinha-nogueira-960.webp" srcset="assets/img/otimizadas/projetos-2026-10-21/01-cozinha-nogueira-480.webp 480w, assets/img/otimizadas/projetos-2026-10-21/01-cozinha-nogueira-960.webp 960w, assets/img/otimizadas/projetos-2026-10-21/01-cozinha-nogueira-1122.webp 1122w" sizes="(max-width: 900px) 100vw, 50vw" alt="" width="1122" height="1402" decoding="async" style="object-position:50% 50%" loading="lazy"></figure>
+        <figure class="pr__foto"><img src="assets/img/otimizadas/projetos-2026-10-21/02-sala-jantar-960.webp" srcset="assets/img/otimizadas/projetos-2026-10-21/02-sala-jantar-480.webp 480w, assets/img/otimizadas/projetos-2026-10-21/02-sala-jantar-960.webp 960w, assets/img/otimizadas/projetos-2026-10-21/02-sala-jantar-1122.webp 1122w" sizes="(max-width: 900px) 100vw, 50vw" alt="" width="1122" height="1402" loading="lazy" decoding="async" style="object-position:50% 50%"></figure>
+        <figure class="pr__foto"><img src="assets/img/otimizadas/projetos-2026-10-21/03-cozinha-carvalho-960.webp" srcset="assets/img/otimizadas/projetos-2026-10-21/03-cozinha-carvalho-480.webp 480w, assets/img/otimizadas/projetos-2026-10-21/03-cozinha-carvalho-960.webp 960w, assets/img/otimizadas/projetos-2026-10-21/03-cozinha-carvalho-1122.webp 1122w" sizes="(max-width: 900px) 100vw, 50vw" alt="" width="1122" height="1402" loading="lazy" decoding="async" style="object-position:50% 50%"></figure>
+        <figure class="pr__foto"><img src="assets/img/otimizadas/projetos-2026-10-21/04-sala-ripado-960.webp" srcset="assets/img/otimizadas/projetos-2026-10-21/04-sala-ripado-480.webp 480w, assets/img/otimizadas/projetos-2026-10-21/04-sala-ripado-960.webp 960w, assets/img/otimizadas/projetos-2026-10-21/04-sala-ripado-1122.webp 1122w" sizes="(max-width: 900px) 100vw, 50vw" alt="" width="1122" height="1402" loading="lazy" decoding="async" style="object-position:50% 50%"></figure>
+        <p class="pr__legenda"><span data-pr-legenda>[ 01 ] Cozinha em nogueira</span></p>
+        <p class="pr__contador"><b data-pr-n>01</b> <span>/ 04</span></p>
+        <span class="pr__progresso"><i></i></span>
+      </div>
+    </div>
+    </div>
+
+    <!-- Fecho de Projetos: vidro aprovado no protótipo 03 -->
+    <div class="mf__grade mf__fecho pj__fecho">
+      <div class="fv fv--projetos" data-reveal>
+        <div class="fv__planos" aria-hidden="true"><i></i><i></i><i></i></div>
+        <div class="fv__vidro">
+          <p class="fv__vidro__frase">Ambientes <em>reais</em>, <span>nada de catálogo.</span></p>
+          <div class="fv__vidro__acao">
+            <a class="fv__convite" href="#orcamento"><span>Quero um projeto assim</span><span class="fv__convite__circulo"><svg aria-hidden="true" focusable="false"><use href="#seta"/></svg></span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 5. ACABAMENTOS (protótipo acabamentos-03, desde 19/10/2026, ref.: Isra Design) ============
+       Palco preso: fileiras de fotos, "Acabamento que / se vê de perto." letra a letra e a foto do centro que cresce
+       até a tela inteira; depois os 4 materiais em painéis com o cartão de vidro e a amostra. Em seguida,
+       "O que definimos com você" no bloco preso da landing (pr__*) e o Bastidores no painel verde.
+       CSS em css/acabamentos.css e JS em js/acabamentos.js. -->
+  <section class="secao a3" id="acabamentos" aria-labelledby="acabamentos-titulo">
+    <div class="a3__trilho" data-a3>
+      <div class="a3__palco" tabindex="0" role="region" aria-label="Acabamentos. Explore pela rolagem ou pelas setas do teclado.">
+        <div class="a3__galeria" data-a3-galeria aria-hidden="true">
+          <div class="a3__fila a3__fila--cima" data-a3-fila="-1"><figure class="a3__img"><img src="assets/img/otimizadas/manifesto-filme/01-cozinha-carvalho-960.webp" srcset="assets/img/otimizadas/manifesto-filme/01-cozinha-carvalho-480.webp 480w, assets/img/otimizadas/manifesto-filme/01-cozinha-carvalho-960.webp 960w, assets/img/otimizadas/manifesto-filme/01-cozinha-carvalho-1440.webp 1440w, assets/img/otimizadas/manifesto-filme/01-cozinha-carvalho-1836.webp 1836w" sizes="(max-width: 720px) 64vw, 40vw" alt="" width="1837" height="856" loading="lazy" decoding="async"></figure><figure class="a3__img"><img src="assets/img/otimizadas/manifesto-filme/03-closet-carvalho-960.webp" srcset="assets/img/otimizadas/manifesto-filme/03-closet-carvalho-480.webp 480w, assets/img/otimizadas/manifesto-filme/03-closet-carvalho-960.webp 960w, assets/img/otimizadas/manifesto-filme/03-closet-carvalho-1440.webp 1440w, assets/img/otimizadas/manifesto-filme/03-closet-carvalho-1836.webp 1836w" sizes="(max-width: 720px) 64vw, 40vw" alt="" width="1837" height="856" loading="lazy" decoding="async"></figure><figure class="a3__img"><img src="assets/img/otimizadas/ambientes-2026-10-18/03-quarto-960.webp" srcset="assets/img/otimizadas/ambientes-2026-10-18/03-quarto-480.webp 480w, assets/img/otimizadas/ambientes-2026-10-18/03-quarto-960.webp 960w, assets/img/otimizadas/ambientes-2026-10-18/03-quarto-1440.webp 1440w, assets/img/otimizadas/ambientes-2026-10-18/03-quarto-1672.webp 1672w" sizes="(max-width: 720px) 64vw, 40vw" alt="" width="1672" height="941" loading="lazy" decoding="async"></figure><figure class="a3__img"><img src="assets/img/otimizadas/manifesto-filme/06-home-office-carvalho-960.webp" srcset="assets/img/otimizadas/manifesto-filme/06-home-office-carvalho-480.webp 480w, assets/img/otimizadas/manifesto-filme/06-home-office-carvalho-960.webp 960w, assets/img/otimizadas/manifesto-filme/06-home-office-carvalho-1440.webp 1440w, assets/img/otimizadas/manifesto-filme/06-home-office-carvalho-1837.webp 1837w" sizes="(max-width: 720px) 64vw, 40vw" alt="" width="1837" height="856" loading="lazy" decoding="async"></figure></div>
+          <div class="a3__fila a3__fila--meio"><figure class="a3__img"><img src="assets/img/otimizadas/ambientes-2026-10-18/02-closet-960.webp" srcset="assets/img/otimizadas/ambientes-2026-10-18/02-closet-480.webp 480w, assets/img/otimizadas/ambientes-2026-10-18/02-closet-960.webp 960w, assets/img/otimizadas/ambientes-2026-10-18/02-closet-1440.webp 1440w, assets/img/otimizadas/ambientes-2026-10-18/02-closet-1672.webp 1672w" sizes="(max-width: 720px) 64vw, 40vw" alt="" width="1672" height="940" loading="lazy" decoding="async"></figure><figure class="a3__img a3__vaga" aria-hidden="true"></figure><figure class="a3__img"><img src="assets/img/otimizadas/manifesto-filme/07-banho-travertino-960.webp" srcset="assets/img/otimizadas/manifesto-filme/07-banho-travertino-480.webp 480w, assets/img/otimizadas/manifesto-filme/07-banho-travertino-960.webp 960w, assets/img/otimizadas/manifesto-filme/07-banho-travertino-1440.webp 1440w, assets/img/otimizadas/manifesto-filme/07-banho-travertino-1837.webp 1837w" sizes="(max-width: 720px) 64vw, 40vw" alt="" width="1837" height="856" loading="lazy" decoding="async"></figure></div>
+          <div class="a3__fila a3__fila--baixo" data-a3-fila="1"><figure class="a3__img"><img src="assets/img/otimizadas/manifesto-filme/04-detalhe-marcenaria-960.webp" srcset="assets/img/otimizadas/manifesto-filme/04-detalhe-marcenaria-480.webp 480w, assets/img/otimizadas/manifesto-filme/04-detalhe-marcenaria-960.webp 960w, assets/img/otimizadas/manifesto-filme/04-detalhe-marcenaria-1440.webp 1440w, assets/img/otimizadas/manifesto-filme/04-detalhe-marcenaria-1837.webp 1837w" sizes="(max-width: 720px) 64vw, 40vw" alt="" width="1837" height="856" loading="lazy" decoding="async"></figure><figure class="a3__img"><img src="assets/img/otimizadas/ambientes-2026-10-18/05-sala-960.webp" srcset="assets/img/otimizadas/ambientes-2026-10-18/05-sala-480.webp 480w, assets/img/otimizadas/ambientes-2026-10-18/05-sala-960.webp 960w, assets/img/otimizadas/ambientes-2026-10-18/05-sala-1440.webp 1440w, assets/img/otimizadas/ambientes-2026-10-18/05-sala-1672.webp 1672w" sizes="(max-width: 720px) 64vw, 40vw" alt="" width="1672" height="941" loading="lazy" decoding="async"></figure><figure class="a3__img"><img src="assets/img/otimizadas/manifesto-filme/02-sala-biblioteca-960.webp" srcset="assets/img/otimizadas/manifesto-filme/02-sala-biblioteca-480.webp 480w, assets/img/otimizadas/manifesto-filme/02-sala-biblioteca-960.webp 960w, assets/img/otimizadas/manifesto-filme/02-sala-biblioteca-1440.webp 1440w, assets/img/otimizadas/manifesto-filme/02-sala-biblioteca-1836.webp 1836w" sizes="(max-width: 720px) 64vw, 40vw" alt="" width="1836" height="856" loading="lazy" decoding="async"></figure><figure class="a3__img"><img src="assets/img/otimizadas/ambientes-2026-10-18/00-ambientes-960.webp" srcset="assets/img/otimizadas/ambientes-2026-10-18/00-ambientes-480.webp 480w, assets/img/otimizadas/ambientes-2026-10-18/00-ambientes-960.webp 960w, assets/img/otimizadas/ambientes-2026-10-18/00-ambientes-1440.webp 1440w, assets/img/otimizadas/ambientes-2026-10-18/00-ambientes-1672.webp 1672w" sizes="(max-width: 720px) 64vw, 40vw" alt="" width="1672" height="941" loading="lazy" decoding="async"></figure></div>
+          <figure class="a3__zoom" data-a3-zoom><img src="assets/img/otimizadas/ambientes-2026-10-18/01-cozinha-960.webp" srcset="assets/img/otimizadas/ambientes-2026-10-18/01-cozinha-480.webp 480w, assets/img/otimizadas/ambientes-2026-10-18/01-cozinha-960.webp 960w, assets/img/otimizadas/ambientes-2026-10-18/01-cozinha-1440.webp 1440w, assets/img/otimizadas/ambientes-2026-10-18/01-cozinha-1672.webp 1672w" sizes="100vw" alt="" width="1672" height="941" loading="lazy" decoding="async"></figure>
+        </div>
+        <div class="a3__veu" data-a3-veu>
+          <h2 class="a3__frase" id="acabamentos-titulo" aria-label="Acabamento que se vê de perto.">
+            <span class="a3__f" data-a3-letras="0">Acabamento que</span>
+            <span class="a3__f" data-a3-letras="1">se vê de perto.</span>
+          </h2>
+          <p class="a3__apoio" data-a3-apoio>Lâmina, ferragem e luz definidas com você antes da produção.</p>
+          <span class="a3__dica" aria-hidden="true">Role para ver de perto <span>↓</span></span>
+        </div>
+        <div class="a3__paineis">
+        <article class="a3__painel" id="material-nogueira" data-a3-painel aria-label="Lâmina de nogueira, 1 de 4">
+          <div class="a3__painel-fundo"><img src="assets/img/otimizadas/ambientes-2026-10-18/01-cozinha-960.webp" srcset="assets/img/otimizadas/ambientes-2026-10-18/01-cozinha-480.webp 480w, assets/img/otimizadas/ambientes-2026-10-18/01-cozinha-960.webp 960w, assets/img/otimizadas/ambientes-2026-10-18/01-cozinha-1440.webp 1440w, assets/img/otimizadas/ambientes-2026-10-18/01-cozinha-1672.webp 1672w" sizes="100vw" alt="Cozinha com armários em nogueira e ilha em pedra" width="1672" height="941" loading="lazy" decoding="async"></div>
+          <div class="a3__painel-conteudo">
+            <div class="a3__cartao">
+              <div class="a3__cartao-topo"><p class="rotulo a3__painel-rot">Acabamentos</p><p class="a3__contador"><span>01</span> / 04</p></div>
+              <span class="a3__progresso" aria-hidden="true"><i></i></span>
+              <div class="a3__cartao-corpo">
+                <figure class="a3__amostra"><img src="assets/img/otimizadas/acabamentos-2026-10-19/material-nogueira-960.webp" srcset="assets/img/otimizadas/acabamentos-2026-10-19/material-nogueira-480.webp 480w, assets/img/otimizadas/acabamentos-2026-10-19/material-nogueira-960.webp 960w, assets/img/otimizadas/acabamentos-2026-10-19/material-nogueira-1254.webp 1254w" sizes="(max-width: 900px) 100px, 200px" alt="Detalhe de armário em lâmina de nogueira" width="1254" height="1254" loading="lazy" decoding="async"></figure>
+                <div class="a3__cartao-txt">
+                  <h3 class="a3__painel-nome">Lâmina de nogueira</h3>
+                  <p class="a3__painel-desc">Tom profundo para cozinhas e salas.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="a3__painel" data-a3-painel aria-label="Ripado em carvalho, 2 de 4">
+          <div class="a3__painel-fundo"><img src="assets/img/otimizadas/manifesto-filme/08-detalhe-painel-curvo-960.webp" srcset="assets/img/otimizadas/manifesto-filme/08-detalhe-painel-curvo-480.webp 480w, assets/img/otimizadas/manifesto-filme/08-detalhe-painel-curvo-960.webp 960w, assets/img/otimizadas/manifesto-filme/08-detalhe-painel-curvo-1440.webp 1440w, assets/img/otimizadas/manifesto-filme/08-detalhe-painel-curvo-1838.webp 1838w" sizes="100vw" alt="Painel ripado em carvalho com canto curvo" width="1838" height="856" loading="lazy" decoding="async"></div>
+          <div class="a3__painel-conteudo">
+            <div class="a3__cartao">
+              <div class="a3__cartao-topo"><p class="rotulo a3__painel-rot">Acabamentos</p><p class="a3__contador"><span>02</span> / 04</p></div>
+              <span class="a3__progresso" aria-hidden="true"><i></i></span>
+              <div class="a3__cartao-corpo">
+                <figure class="a3__amostra"><img src="assets/img/otimizadas/acabamentos-2026-10-19/material-ripado-960.webp" srcset="assets/img/otimizadas/acabamentos-2026-10-19/material-ripado-480.webp 480w, assets/img/otimizadas/acabamentos-2026-10-19/material-ripado-960.webp 960w, assets/img/otimizadas/acabamentos-2026-10-19/material-ripado-1254.webp 1254w" sizes="(max-width: 900px) 100px, 200px" alt="Detalhe de painel ripado em madeira clara" width="1254" height="1254" loading="lazy" decoding="async"></figure>
+                <div class="a3__cartao-txt">
+                  <h3 class="a3__painel-nome">Ripado em carvalho</h3>
+                  <p class="a3__painel-desc">Painel que esconde portas e aquece a parede.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="a3__painel" data-a3-painel aria-label="Luz embutida, 3 de 4">
+          <div class="a3__painel-fundo"><img src="assets/img/otimizadas/manifesto-filme/02-sala-biblioteca-960.webp" srcset="assets/img/otimizadas/manifesto-filme/02-sala-biblioteca-480.webp 480w, assets/img/otimizadas/manifesto-filme/02-sala-biblioteca-960.webp 960w, assets/img/otimizadas/manifesto-filme/02-sala-biblioteca-1440.webp 1440w, assets/img/otimizadas/manifesto-filme/02-sala-biblioteca-1836.webp 1836w" sizes="100vw" alt="Estante em carvalho com nichos iluminados" width="1836" height="856" loading="lazy" decoding="async"></div>
+          <div class="a3__painel-conteudo">
+            <div class="a3__cartao">
+              <div class="a3__cartao-topo"><p class="rotulo a3__painel-rot">Acabamentos</p><p class="a3__contador"><span>03</span> / 04</p></div>
+              <span class="a3__progresso" aria-hidden="true"><i></i></span>
+              <div class="a3__cartao-corpo">
+                <figure class="a3__amostra"><img src="assets/img/otimizadas/acabamentos-2026-10-19/material-iluminacao-960.webp" srcset="assets/img/otimizadas/acabamentos-2026-10-19/material-iluminacao-480.webp 480w, assets/img/otimizadas/acabamentos-2026-10-19/material-iluminacao-960.webp 960w, assets/img/otimizadas/acabamentos-2026-10-19/material-iluminacao-1254.webp 1254w" sizes="(max-width: 900px) 100px, 200px" alt="Prateleiras com fita de luz embutida sob o armário" width="1254" height="1254" loading="lazy" decoding="async"></figure>
+                <div class="a3__cartao-txt">
+                  <h3 class="a3__painel-nome">Luz embutida</h3>
+                  <p class="a3__painel-desc">Iluminação dentro do móvel, sem fio aparente.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="a3__painel" data-a3-painel aria-label="Lâmina clara, 4 de 4">
+          <div class="a3__painel-fundo"><img src="assets/img/otimizadas/manifesto-filme/05-suite-carvalho-960.webp" srcset="assets/img/otimizadas/manifesto-filme/05-suite-carvalho-480.webp 480w, assets/img/otimizadas/manifesto-filme/05-suite-carvalho-960.webp 960w, assets/img/otimizadas/manifesto-filme/05-suite-carvalho-1440.webp 1440w, assets/img/otimizadas/manifesto-filme/05-suite-carvalho-1838.webp 1838w" sizes="100vw" alt="Suíte com painel e armários em lâmina clara" width="1837" height="856" loading="lazy" decoding="async"></div>
+          <div class="a3__painel-conteudo">
+            <div class="a3__cartao">
+              <div class="a3__cartao-topo"><p class="rotulo a3__painel-rot">Acabamentos</p><p class="a3__contador"><span>04</span> / 04</p></div>
+              <span class="a3__progresso" aria-hidden="true"><i></i></span>
+              <div class="a3__cartao-corpo">
+                <figure class="a3__amostra"><img src="assets/img/otimizadas/acabamentos-2026-10-19/material-lamina-clara-960.webp" srcset="assets/img/otimizadas/acabamentos-2026-10-19/material-lamina-clara-480.webp 480w, assets/img/otimizadas/acabamentos-2026-10-19/material-lamina-clara-960.webp 960w, assets/img/otimizadas/acabamentos-2026-10-19/material-lamina-clara-1254.webp 1254w" sizes="(max-width: 900px) 100px, 200px" alt="Detalhe de portas em lâmina clara com perfil escuro" width="1254" height="1254" loading="lazy" decoding="async"></figure>
+                <div class="a3__cartao-txt">
+                  <h3 class="a3__painel-nome">Lâmina clara</h3>
+                  <p class="a3__painel-desc">Leveza para quartos e closets.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        </div>
+        <div class="a3__progresso" aria-hidden="true"><i></i></div>
+      </div>
+    </div>
+
+    <!-- O que definimos com você: o mesmo bloco da landing ("Do projeto à montagem" e Projetos, classes pr__*
+         do styles.css): título na coluna, lista em acordeão com [ 01 ] e foto em meia tela com cortina.
+         No desktop fica preso (pj__pino, 100svh + 4 × 55svh); no celular, foto presa e um gesto por item.
+         O JS é o iniciaPino do main.js (um por [data-pr-pino]). -->
+    <div class="pr__pino pj__pino a3__pino" id="definicoes" style="--n:4" data-pr-pino>
+    <div class="pr__split">
+      <div class="pr__lista-col">
+        <h3 class="pr__titulo">O que definimos<br><span>com você.</span></h3>
+        <ol class="pr__lista" data-pr-lista>
+          <li class="pr__etapa is-aberta" data-pr-etapa>
+            <span class="pr__linha" aria-hidden="true"><i></i></span>
+            <h4>
+              <button type="button" class="pr__gatilho" aria-expanded="true" aria-controls="ac-painel-1" id="ac-botao-1">
+                <span class="pr__num" aria-hidden="true">[ 01 ]</span>
+                <span class="pr__nome">Madeira</span>
+              </button>
+            </h4>
+            <div class="pr__painel" id="ac-painel-1" role="region" aria-labelledby="ac-botao-1">
+              <div class="pr__painel-in">
+                <p>Lâmina natural, laca ou MDF com textura.</p>
+                <figure class="pr__foto-movel"><img src="assets/img/otimizadas/acabamentos-2026-10-19/material-nogueira-960.webp" srcset="assets/img/otimizadas/acabamentos-2026-10-19/material-nogueira-480.webp 480w, assets/img/otimizadas/acabamentos-2026-10-19/material-nogueira-960.webp 960w, assets/img/otimizadas/acabamentos-2026-10-19/material-nogueira-1254.webp 1254w" sizes="(max-width: 900px) 100vw, 50vw" alt="" width="1254" height="1254" loading="lazy" style="object-position:50% 50%" decoding="async"></figure>
+              </div>
+            </div>
+          </li>
+          <li class="pr__etapa" data-pr-etapa>
+            <span class="pr__linha" aria-hidden="true"><i></i></span>
+            <h4>
+              <button type="button" class="pr__gatilho" aria-expanded="false" aria-controls="ac-painel-2" id="ac-botao-2">
+                <span class="pr__num" aria-hidden="true">[ 02 ]</span>
+                <span class="pr__nome">Ferragens</span>
+              </button>
+            </h4>
+            <div class="pr__painel" id="ac-painel-2" role="region" aria-labelledby="ac-botao-2">
+              <div class="pr__painel-in">
+                <p>Dobradiças e corrediças com fechamento suave. <sup class="val">validar</sup></p>
+                <figure class="pr__foto-movel"><img src="assets/img/otimizadas/definicoes-2026-10-20/02-ferragens-960.webp" srcset="assets/img/otimizadas/definicoes-2026-10-20/02-ferragens-480.webp 480w, assets/img/otimizadas/definicoes-2026-10-20/02-ferragens-960.webp 960w, assets/img/otimizadas/definicoes-2026-10-20/02-ferragens-1122.webp 1122w" sizes="(max-width: 900px) 100vw, 50vw" alt="Dobradiça metálica articulada instalada em um armário de madeira com a porta aberta" width="1122" height="1402" loading="lazy" decoding="async" style="object-position:50% 50%"></figure>
+              </div>
+            </div>
+          </li>
+          <li class="pr__etapa" data-pr-etapa>
+            <span class="pr__linha" aria-hidden="true"><i></i></span>
+            <h4>
+              <button type="button" class="pr__gatilho" aria-expanded="false" aria-controls="ac-painel-3" id="ac-botao-3">
+                <span class="pr__num" aria-hidden="true">[ 03 ]</span>
+                <span class="pr__nome">Puxadores</span>
+              </button>
+            </h4>
+            <div class="pr__painel" id="ac-painel-3" role="region" aria-labelledby="ac-botao-3">
+              <div class="pr__painel-in">
+                <p>Cava, perfil ou embutido no próprio móvel.</p>
+                <figure class="pr__foto-movel"><img src="assets/img/otimizadas/definicoes-2026-10-21/03-puxadores-showroom-marrom-960.webp" srcset="assets/img/otimizadas/definicoes-2026-10-21/03-puxadores-showroom-marrom-480.webp 480w, assets/img/otimizadas/definicoes-2026-10-21/03-puxadores-showroom-marrom-960.webp 960w, assets/img/otimizadas/definicoes-2026-10-21/03-puxadores-showroom-marrom-1122.webp 1122w" sizes="(max-width: 900px) 100vw, 50vw" alt="Painéis de madeira marrom com diferentes modelos de puxadores em acabamentos dourado, preto e bronze" width="1122" height="1402" loading="lazy" decoding="async" style="object-position:50% 50%"></figure>
+              </div>
+            </div>
+          </li>
+          <li class="pr__etapa" data-pr-etapa>
+            <span class="pr__linha" aria-hidden="true"><i></i></span>
+            <h4>
+              <button type="button" class="pr__gatilho" aria-expanded="false" aria-controls="ac-painel-4" id="ac-botao-4">
+                <span class="pr__num" aria-hidden="true">[ 04 ]</span>
+                <span class="pr__nome">Iluminação</span>
+              </button>
+            </h4>
+            <div class="pr__painel" id="ac-painel-4" role="region" aria-labelledby="ac-botao-4">
+              <div class="pr__painel-in">
+                <p>Luz embutida em nichos, prateleiras e armários.</p>
+                <figure class="pr__foto-movel"><img src="assets/img/otimizadas/definicoes-2026-10-20/04-iluminacao-960.webp" srcset="assets/img/otimizadas/definicoes-2026-10-20/04-iluminacao-480.webp 480w, assets/img/otimizadas/definicoes-2026-10-20/04-iluminacao-960.webp 960w, assets/img/otimizadas/definicoes-2026-10-20/04-iluminacao-1122.webp 1122w" sizes="(max-width: 900px) 100vw, 50vw" alt="Perfil de LED embutido sob uma prateleira, iluminando o interior do nicho de madeira" width="1122" height="1402" loading="lazy" decoding="async" style="object-position:50% 25%"></figure>
+              </div>
+            </div>
+          </li>
+        </ol>
+      </div>
+
+      <!-- Foto em meia tela, de ponta a ponta à direita: troca com o item aberto -->
+      <div class="pr__fotos" aria-hidden="true" data-pr-fotos>
+        <figure class="pr__foto is-ativa"><img src="assets/img/otimizadas/acabamentos-2026-10-19/material-nogueira-960.webp" srcset="assets/img/otimizadas/acabamentos-2026-10-19/material-nogueira-480.webp 480w, assets/img/otimizadas/acabamentos-2026-10-19/material-nogueira-960.webp 960w, assets/img/otimizadas/acabamentos-2026-10-19/material-nogueira-1254.webp 1254w" sizes="(max-width: 900px) 100vw, 50vw" alt="" width="1254" height="1254" style="object-position:50% 50%" loading="lazy" decoding="async"></figure>
+        <figure class="pr__foto"><img src="assets/img/otimizadas/definicoes-2026-10-20/02-ferragens-960.webp" srcset="assets/img/otimizadas/definicoes-2026-10-20/02-ferragens-480.webp 480w, assets/img/otimizadas/definicoes-2026-10-20/02-ferragens-960.webp 960w, assets/img/otimizadas/definicoes-2026-10-20/02-ferragens-1122.webp 1122w" sizes="(max-width: 900px) 100vw, 50vw" alt="" width="1122" height="1402" loading="lazy" decoding="async" style="object-position:50% 50%"></figure>
+        <figure class="pr__foto"><img src="assets/img/otimizadas/definicoes-2026-10-21/03-puxadores-showroom-marrom-960.webp" srcset="assets/img/otimizadas/definicoes-2026-10-21/03-puxadores-showroom-marrom-480.webp 480w, assets/img/otimizadas/definicoes-2026-10-21/03-puxadores-showroom-marrom-960.webp 960w, assets/img/otimizadas/definicoes-2026-10-21/03-puxadores-showroom-marrom-1122.webp 1122w" sizes="(max-width: 900px) 100vw, 50vw" alt="" width="1122" height="1402" loading="lazy" decoding="async" style="object-position:50% 50%"></figure>
+        <figure class="pr__foto"><img src="assets/img/otimizadas/definicoes-2026-10-20/04-iluminacao-960.webp" srcset="assets/img/otimizadas/definicoes-2026-10-20/04-iluminacao-480.webp 480w, assets/img/otimizadas/definicoes-2026-10-20/04-iluminacao-960.webp 960w, assets/img/otimizadas/definicoes-2026-10-20/04-iluminacao-1122.webp 1122w" sizes="(max-width: 900px) 100vw, 50vw" alt="" width="1122" height="1402" loading="lazy" decoding="async" style="object-position:50% 50%"></figure>
+        <p class="pr__legenda"><span data-pr-legenda>[ 01 ] Madeira</span></p>
+        <p class="pr__contador"><b data-pr-n>01</b> <span>/ 04</span></p>
+        <span class="pr__progresso"><i></i></span>
+      </div>
+    </div>
+    </div>
+
+    <!-- Fecho de Bastidores: vidro aprovado no protótipo 03 -->
+    <div class="grade a3__bast">
+      <div class="fv fv--bastidores" data-a3-sobe>
+        <div class="fv__planos" aria-hidden="true"><i></i><i></i><i></i></div>
+        <div class="fv__vidro">
+          <p class="fv__vidro__frase">Da madeira ao caminhão de entrega, <span>cada etapa à vista.</span></p>
+          <div class="fv__vidro__acao">
+            <a class="fv__convite" href="https://wa.me/5511992478221?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20quero%20um%20or%C3%A7amento." target="_blank" rel="noopener" data-wa><span>Começar meu projeto no WhatsApp</span><span class="fv__convite__circulo"><svg aria-hidden="true" focusable="false"><use href="#seta"/></svg></span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 7. DEPOIMENTO (só com depoimento real) ============ -->
+  <section class="secao depoimento so-revisao" id="depoimento" aria-labelledby="depoimento-titulo">
+    <div class="grade">
+      <h2 class="sr" id="depoimento-titulo">Recebido no prazo, conferido no detalhe.</h2>
+      <figure class="depo">
+        <div class="depo__foto"><img src="assets/img/otimizadas/projetos-2026-10-21/02-sala-jantar-960.webp" srcset="assets/img/otimizadas/projetos-2026-10-21/02-sala-jantar-480.webp 480w, assets/img/otimizadas/projetos-2026-10-21/02-sala-jantar-960.webp 960w, assets/img/otimizadas/projetos-2026-10-21/02-sala-jantar-1122.webp 1122w" sizes="(max-width: 900px) 100vw, 40vw" alt="" loading="lazy" width="1122" height="1402" decoding="async"></div>
+        <blockquote class="depo__txt">
+          <p><span class="pend">“[Depoimento real, até 25 palavras: o que o cliente temia, a data cumprida e o detalhe que chamou atenção.]”</span></p>
+          <footer><span class="pend">[Nome]</span> · <span class="pend">[Ambiente] · [Bairro]</span></footer>
+        </blockquote>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ============ 8. ARQUITETOS (23/10/2026) ============
+       Opção D de prototypes/arquitetos-opcoes.html, aprovada: o estudo do Codex (prototypes/arquitetos-01.html),
+       com o botão "Desenvolver meu projeto" no lugar da faixa "Sem projeto? / Desenvolvemos com você." e a cômoda do
+       desenho que se forma quando aparece (css/arquitetos.css e js/arquitetos.js). Os dois botões mantêm o
+       data-arquiteto (a frase que vai na mensagem do WhatsApp). Reserva: arquivo/_copias/antes-arquitetos-d-2026-10-23/ -->
+  <section class="secao arq-estudio aq-d" id="arquitetos" aria-labelledby="arquitetos-titulo">
+    <div class="arq-estudio__miolo">
+      <div class="arq-estudio__principal">
+        <div class="arq-estudio__conteudo" data-reveal>
+          <h2 class="arq-estudio__titulo" id="arquitetos-titulo">Já tem projeto <span>de arquiteto?</span></h2>
+          <p class="arq-estudio__apoio">Executamos com fidelidade ao desenho e cronograma compartilhado com o profissional.</p>
+          <div class="aq-d__acoes">
+            <a class="arq-estudio__convite" href="#orcamento" data-arquiteto="Sou arquiteto(a)"><span>Sou arquiteto(a)</span><span class="arq-estudio__circulo"><svg aria-hidden="true" focusable="false"><use href="#seta"/></svg></span></a>
+            <a class="arq-estudio__convite aq-d__sem" href="#orcamento" data-arquiteto="Quero que a Nazzan desenvolva"><span>Desenvolver meu projeto</span><span class="arq-estudio__circulo"><svg aria-hidden="true" focusable="false"><use href="#seta"/></svg></span></a>
+          </div>
+        </div>
+        <!-- Esboço conceitual (Codex), sem medidas nem alegação de projeto executado. Os traços estão separados
+             para entrarem em ordem: construção e cotas, corpo, lateral e base, as três gavetas, a aresta dourada. -->
+        <div class="arq-estudio__desenho" aria-hidden="true" data-reveal data-aq-forma>
+          <svg viewBox="0 0 500 350" fill="none" focusable="false">
+            <path class="face" d="M90 115 190 58H412L312 115Z"/>
+            <path class="face" d="M312 115 412 58V247L312 304Z"/>
+            <g class="auxiliar">
+              <path pathLength="1" d="M52 115H331"/>
+              <path pathLength="1" d="M90 81V327"/>
+              <path pathLength="1" d="M312 94V328"/>
+              <path pathLength="1" d="M412 34V270"/>
+              <path pathLength="1" d="M168 58H438"/>
+              <path pathLength="1" d="M66 137V298M61 140 71 134M61 301 71 295"/>
+              <path pathLength="1" d="M90 329H312M93 324 87 334M315 324 309 334"/>
+              <path pathLength="1" d="M328 321 428 264M324 318 332 324M424 261 432 267"/>
+            </g>
+            <g class="estrutura">
+              <path pathLength="1" d="M90 115 190 58H412V247L312 304H90V115H312L412 58M312 115V304"/>
+              <path pathLength="1" d="M320 123 404 75V240L320 287Z"/>
+              <path pathLength="1" d="M99 304V314H303L403 257V252M303 304V314"/>
+              <g class="aq-gaveta"><path pathLength="1" d="M96 123H306V179H96Z"/><path pathLength="1" d="M178 136H224"/></g>
+              <g class="aq-gaveta"><path pathLength="1" d="M96 187H306V241H96Z"/><path pathLength="1" d="M178 200H224"/></g>
+              <g class="aq-gaveta"><path pathLength="1" d="M96 249H306V296H96Z"/><path pathLength="1" d="M178 262H224"/></g>
+            </g>
+            <path class="detalhe" pathLength="1" d="M90 115H312L412 58"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 9. DÚVIDAS ============ -->
+  <section class="secao duvidas" id="duvidas" aria-labelledby="duvidas-titulo">
+    <div class="grade">
+      <div class="duvidas__cabeca">
+        <h2 class="titulo" id="duvidas-titulo" data-reveal>Antes de você perguntar.</h2>
+      </div>
+      <div class="faq" data-reveal>
+        <details>
+          <summary>Quanto tempo leva?</summary>
+          <p><span class="pend" data-pend>Um ambiente leva em média [X] semanas após a aprovação.</span> A data exata fica no contrato.</p>
+        </details>
+        <details>
+          <summary>Quanto custa?</summary>
+          <p>Depende das medidas e dos materiais. O orçamento detalhado sai junto com o projeto 3D.</p>
+        </details>
+        <details>
+          <summary>O projeto 3D é cobrado? <sup class="val">validar</sup></summary>
+          <p>Faz parte do orçamento. Você só fecha depois de aprovar.</p>
+        </details>
+        <details>
+          <summary>E se eu não souber as medidas?</summary>
+          <p>Tudo bem. A gente confere na visita.</p>
+        </details>
+        <details>
+          <summary>Posso fazer só um ambiente?</summary>
+          <p>Pode. Muitos clientes começam pela cozinha ou pelo closet.</p>
+        </details>
+        <details>
+          <summary>Como acompanho a produção? <sup class="val">validar</sup></summary>
+          <p>Você recebe fotos de cada etapa pelo WhatsApp.</p>
+        </details>
+        <details>
+          <summary>Onde os móveis são produzidos?</summary>
+          <p>Em fábrica parceira, acompanhada pela equipe Nazzan. Quem responde pelo projeto e pela data somos nós.</p>
+        </details>
+        <details data-pend>
+          <summary>Tem garantia?</summary>
+          <p><span class="pend">[X]</span> anos em estrutura, ferragens e instalação.</p>
+        </details>
+        <details>
+          <summary>Quais regiões vocês atendem?</summary>
+          <p>São Paulo capital<span class="pend" data-pend> e [regiões]</span>.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 10. ORÇAMENTO: no formato do contato da Hofstaetter (21/10/2026) ============
+       Lido no código deles: verde (o do rodapé) com filete em cima, duas colunas alinhadas na base. À esquerda, rótulo,
+       título, apoio e a pílula de vidro para o WhatsApp; à direita, a lista de contatos com filetes e setas. -->
+  <section class="orcamento ct" id="orcamento" aria-labelledby="orcamento-titulo">
+    <div class="ct__intro">
+      <h2 class="ct__titulo" id="orcamento-titulo" data-reveal>Para quando<br> <span>você precisa?</span></h2>
+      <p class="ct__apoio" data-reveal>Conte o ambiente e a data. Retornamos em até 1&nbsp;dia&nbsp;útil.</p>
+      <a class="ct__pill" href="https://wa.me/5511992478221?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20quero%20um%20or%C3%A7amento." target="_blank" rel="noopener" data-wa data-reveal>Conversar no WhatsApp <span class="ct__circulo"><svg class="ct__seta" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 17 17 7M7 7h10v10"/></svg></span></a>
+    </div>
+    <div class="ct__lista">
+      <a class="ct__linha" href="https://wa.me/5511992478221?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20quero%20um%20or%C3%A7amento." target="_blank" rel="noopener" data-wa data-reveal>
+        <span class="ct__rot">WhatsApp</span>
+        <strong>(11) 99247-8221</strong>
+        <svg class="ct__seta" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 17 17 7M7 7h10v10"/></svg>
+      </a>
+      <a class="ct__linha" href="tel:+551131361242" data-reveal>
+        <span class="ct__rot">Telefone</span>
+        <strong>(11) 3136-1242</strong>
+        <svg class="ct__seta" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 17 17 7M7 7h10v10"/></svg>
+      </a>
+      <a class="ct__linha" href="mailto:atendimento@nazzan.com.br" data-reveal>
+        <span class="ct__rot">E-mail</span>
+        <strong>atendimento@nazzan.com.br</strong>
+        <svg class="ct__seta" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 17 17 7M7 7h10v10"/></svg>
+      </a>
+      <a class="ct__linha" href="https://www.google.com/maps/search/?api=1&amp;query=Rua+do+Orat%C3%B3rio%2C+3735+-+Mooca%2C+S%C3%A3o+Paulo+-+SP" target="_blank" rel="noopener" data-reveal>
+        <span class="ct__rot">Endereço</span>
+        <strong>Rua do Oratório, 3735 · Mooca</strong>
+        <svg class="ct__seta" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 17 17 7M7 7h10v10"/></svg>
+      </a>
+    </div>
+  </section>
+</main>
+
+<!-- ============ RODAPÉ (21/10/2026, minimalista) ============
+     Filete em cima; a logo pequena (o ícone dourado da marca, redesenhado em vetor, e "NAZZAN" em 500 com "MÓVEIS"
+     em 400, em curvas da Inter Tight), que se desenha do traço ao sólido (rodape.js), e o botão de vidro para voltar ao início; embaixo, um
+     filete com o bairro e o copyright. Os contatos ficam no orçamento, logo acima. -->
+<footer class="rodape">
+  <div class="atmosfera atmosfera--rodape" aria-hidden="true"><i></i><i></i><i></i></div>
+  <div class="rodape__in">
+    <div class="rodape__topo">
+      <a class="rodape__marca" href="#inicio" aria-label="Nazzan Móveis · voltar ao início">
+        <svg class="rodape__logo" viewBox="-2021 -1944 17315 2010" aria-hidden="true" focusable="false" data-gigante>
+          <defs>
+            <clipPath id="rg-cheio-0"><rect x="-2001" y="-1808" width="1486" height="1828" data-gigante-nivel/></clipPath>
+            <clipPath id="rg-cheio-1"><rect x="100" y="-1510" width="1245" height="1530" data-gigante-nivel/></clipPath>
+            <clipPath id="rg-cheio-2"><rect x="1392" y="-1510" width="1371" height="1530" data-gigante-nivel/></clipPath>
+            <clipPath id="rg-cheio-3"><rect x="2764" y="-1510" width="1112" height="1530" data-gigante-nivel/></clipPath>
+            <clipPath id="rg-cheio-4"><rect x="3945" y="-1510" width="1112" height="1530" data-gigante-nivel/></clipPath>
+            <clipPath id="rg-cheio-5"><rect x="5059" y="-1510" width="1371" height="1530" data-gigante-nivel/></clipPath>
+            <clipPath id="rg-cheio-6"><rect x="6476" y="-1510" width="1245" height="1530" data-gigante-nivel/></clipPath>
+            <clipPath id="rg-cheio-7"><rect x="8372" y="-1510" width="1509" height="1530" data-gigante-nivel/></clipPath>
+            <clipPath id="rg-cheio-8"><rect x="10006" y="-1924" width="1356" height="1964" data-gigante-nivel/></clipPath>
+            <clipPath id="rg-cheio-9"><rect x="11359" y="-1510" width="1320" height="1530" data-gigante-nivel/></clipPath>
+            <clipPath id="rg-cheio-10"><rect x="12734" y="-1510" width="950" height="1530" data-gigante-nivel/></clipPath>
+            <clipPath id="rg-cheio-11"><rect x="13821" y="-1510" width="220" height="1530" data-gigante-nivel/></clipPath>
+            <clipPath id="rg-cheio-12"><rect x="14160" y="-1530" width="1114" height="1576" data-gigante-nivel/></clipPath>
+          </defs>
+          <g class="rodape__letra rodape__letra--icone" style="--i:0" data-gigante-letra>
+            <path class="rodape__cheio" clip-path="url(#rg-cheio-0)" fill-rule="evenodd" d="M-1981 -1160 Q-1981 -1191 -1954 -1196 L-802 -1742 Q-726 -1780 -649 -1782 Q-535 -1788 -535 -1674 L-535 -76 Q-535 0 -611 0 L-1905 0 Q-1981 0 -1981 -76 Z M-1734 -1217 L-802 -1652 L-802 -86 L-1144 -86 L-1144 -1056 Q-1144 -1113 -1201 -1113 L-1334 -1113 Q-1380 -1113 -1391 -1095 L-1734 -938 Z M-1734 -854 L-1391 -1010 L-1391 -86 L-1734 -86 Z"/>
+            <path class="rodape__traco" pathLength="1" d="M-1981 -1160 Q-1981 -1191 -1954 -1196 L-802 -1742 Q-726 -1780 -649 -1782 Q-535 -1788 -535 -1674 L-535 -76 Q-535 0 -611 0 L-1905 0 Q-1981 0 -1981 -76 Z M-1734 -1217 L-802 -1652 L-802 -86 L-1144 -86 L-1144 -1056 Q-1144 -1113 -1201 -1113 L-1334 -1113 Q-1380 -1113 -1391 -1095 L-1734 -938 Z M-1734 -854 L-1391 -1010 L-1391 -86 L-1734 -86 Z"/>
+          </g>
+          <g class="rodape__letra" style="--i:1" data-gigante-letra>
+            <path class="rodape__cheio" clip-path="url(#rg-cheio-1)" d="M1325 -1490V0H1115L360 -1092H345V0H120V-1490H328L1086 -396H1100V-1490Z"/>
+            <path class="rodape__traco" pathLength="1" d="M1325 -1490V0H1115L360 -1092H345V0H120V-1490H328L1086 -396H1100V-1490Z"/>
+          </g>
+          <g class="rodape__letra" style="--i:2" data-gigante-letra>
+            <path class="rodape__cheio" clip-path="url(#rg-cheio-2)" d="M1651 0H1412L1948 -1490H2208L2743 0H2505L2083 -1219H2071ZM1691 -583H2464V-395H1691Z"/>
+            <path class="rodape__traco" pathLength="1" d="M1651 0H1412L1948 -1490H2208L2743 0H2505L2083 -1219H2071ZM1691 -583H2464V-395H1691Z"/>
+          </g>
+          <g class="rodape__letra" style="--i:3" data-gigante-letra>
+            <path class="rodape__cheio" clip-path="url(#rg-cheio-3)" d="M2790 0V-149L3574 -1297H2784V-1490H3850V-1340L3066 -193H3856V0Z"/>
+            <path class="rodape__traco" pathLength="1" d="M2790 0V-149L3574 -1297H2784V-1490H3850V-1340L3066 -193H3856V0Z"/>
+          </g>
+          <g class="rodape__letra" style="--i:4" data-gigante-letra>
+            <path class="rodape__cheio" clip-path="url(#rg-cheio-4)" d="M3971 0V-149L4755 -1297H3965V-1490H5031V-1340L4247 -193H5037V0Z"/>
+            <path class="rodape__traco" pathLength="1" d="M3971 0V-149L4755 -1297H3965V-1490H5031V-1340L4247 -193H5037V0Z"/>
+          </g>
+          <g class="rodape__letra" style="--i:5" data-gigante-letra>
+            <path class="rodape__cheio" clip-path="url(#rg-cheio-5)" d="M5318 0H5079L5615 -1490H5875L6410 0H6172L5750 -1219H5738ZM5358 -583H6131V-395H5358Z"/>
+            <path class="rodape__traco" pathLength="1" d="M5318 0H5079L5615 -1490H5875L6410 0H6172L5750 -1219H5738ZM5358 -583H6131V-395H5358Z"/>
+          </g>
+          <g class="rodape__letra" style="--i:6" data-gigante-letra>
+            <path class="rodape__cheio" clip-path="url(#rg-cheio-6)" d="M7701 -1490V0H7491L6736 -1092H6721V0H6496V-1490H6704L7462 -396H7476V-1490Z"/>
+            <path class="rodape__traco" pathLength="1" d="M7701 -1490V0H7491L6736 -1092H6721V0H6496V-1490H6704L7462 -396H7476V-1490Z"/>
+          </g>
+          <g class="rodape__letra rodape__letra--leve" style="--i:7" data-gigante-letra>
+            <path class="rodape__cheio" clip-path="url(#rg-cheio-7)" d="M8392 -1490H8608L9114 -254H9132L9638 -1490H9861V0H9684V-1132H9670L9201 0H9039L8576 -1132H8562V0H8392Z"/>
+            <path class="rodape__traco" pathLength="1" d="M8392 -1490H8608L9114 -254H9132L9638 -1490H9861V0H9684V-1132H9670L9201 0H9039L8576 -1132H8562V0H8392Z"/>
+          </g>
+          <g class="rodape__letra rodape__letra--leve" style="--i:8" data-gigante-letra>
+            <path class="rodape__cheio" clip-path="url(#rg-cheio-8)" d="M10685 20Q10495 20 10346 -73Q10197 -166 10112 -338Q10026 -509 10026 -744Q10026 -980 10112 -1152Q10197 -1324 10346 -1417Q10495 -1510 10685 -1510Q10876 -1510 11024 -1417Q11172 -1324 11257 -1152Q11342 -980 11342 -744Q11342 -509 11257 -338Q11172 -166 11024 -73Q10876 20 10685 20ZM10685 -148Q10820 -148 10930 -216Q11039 -285 11104 -418Q11168 -551 11168 -744Q11168 -938 11104 -1072Q11039 -1205 10930 -1274Q10820 -1342 10685 -1342Q10550 -1342 10440 -1274Q10330 -1205 10265 -1072Q10200 -938 10200 -744Q10200 -551 10265 -418Q10330 -285 10440 -216Q10550 -148 10685 -148ZM10601 -1630 10741 -1904H10935L10743 -1630Z"/>
+            <path class="rodape__traco" pathLength="1" d="M10685 20Q10495 20 10346 -73Q10197 -166 10112 -338Q10026 -509 10026 -744Q10026 -980 10112 -1152Q10197 -1324 10346 -1417Q10495 -1510 10685 -1510Q10876 -1510 11024 -1417Q11172 -1324 11257 -1152Q11342 -980 11342 -744Q11342 -509 11257 -338Q11172 -166 11024 -73Q10876 20 10685 20ZM10685 -148Q10820 -148 10930 -216Q11039 -285 11104 -418Q11168 -551 11168 -744Q11168 -938 11104 -1072Q11039 -1205 10930 -1274Q10820 -1342 10685 -1342Q10550 -1342 10440 -1274Q10330 -1205 10265 -1072Q10200 -938 10200 -744Q10200 -551 10265 -418Q10330 -285 10440 -216Q10550 -148 10685 -148ZM10601 -1630 10741 -1904H10935L10743 -1630Z"/>
+          </g>
+          <g class="rodape__letra rodape__letra--leve" style="--i:9" data-gigante-letra>
+            <path class="rodape__cheio" clip-path="url(#rg-cheio-9)" d="M11569 -1490 12011 -236H12029L12471 -1490H12659L12113 0H11927L11379 -1490Z"/>
+            <path class="rodape__traco" pathLength="1" d="M11569 -1490 12011 -236H12029L12471 -1490H12659L12113 0H11927L11379 -1490Z"/>
+          </g>
+          <g class="rodape__letra rodape__letra--leve" style="--i:10" data-gigante-letra>
+            <path class="rodape__cheio" clip-path="url(#rg-cheio-10)" d="M12754 0V-1490H13654V-1330H12934V-832H13606V-672H12934V-160H13664V0Z"/>
+            <path class="rodape__traco" pathLength="1" d="M12754 0V-1490H13654V-1330H12934V-832H13606V-672H12934V-160H13664V0Z"/>
+          </g>
+          <g class="rodape__letra rodape__letra--leve" style="--i:11" data-gigante-letra>
+            <path class="rodape__cheio" clip-path="url(#rg-cheio-11)" d="M14021 -1490V0H13841V-1490Z"/>
+            <path class="rodape__traco" pathLength="1" d="M14021 -1490V0H13841V-1490Z"/>
+          </g>
+          <g class="rodape__letra rodape__letra--leve" style="--i:12" data-gigante-letra>
+            <path class="rodape__cheio" clip-path="url(#rg-cheio-12)" d="M14716 26Q14556 26 14439 -26Q14322 -77 14256 -170Q14189 -262 14180 -384H14366Q14374 -300 14424 -245Q14473 -190 14550 -163Q14627 -136 14716 -136Q14819 -136 14902 -170Q14984 -204 15032 -265Q15080 -326 15080 -408Q15080 -482 15038 -528Q14996 -574 14929 -603Q14861 -632 14782 -654L14600 -706Q14425 -756 14324 -850Q14222 -943 14222 -1094Q14222 -1219 14290 -1312Q14357 -1406 14473 -1458Q14588 -1510 14730 -1510Q14874 -1510 14986 -1458Q15098 -1407 15164 -1318Q15230 -1230 15234 -1118H15058Q15045 -1228 14953 -1289Q14860 -1350 14724 -1350Q14626 -1350 14552 -1318Q14478 -1286 14437 -1230Q14396 -1174 14396 -1102Q14396 -1023 14445 -974Q14494 -926 14562 -899Q14629 -872 14684 -856L14834 -814Q14892 -798 14964 -771Q15035 -744 15102 -698Q15168 -652 15211 -580Q15254 -509 15254 -404Q15254 -284 15191 -186Q15128 -89 15008 -32Q14888 26 14716 26Z"/>
+            <path class="rodape__traco" pathLength="1" d="M14716 26Q14556 26 14439 -26Q14322 -77 14256 -170Q14189 -262 14180 -384H14366Q14374 -300 14424 -245Q14473 -190 14550 -163Q14627 -136 14716 -136Q14819 -136 14902 -170Q14984 -204 15032 -265Q15080 -326 15080 -408Q15080 -482 15038 -528Q14996 -574 14929 -603Q14861 -632 14782 -654L14600 -706Q14425 -756 14324 -850Q14222 -943 14222 -1094Q14222 -1219 14290 -1312Q14357 -1406 14473 -1458Q14588 -1510 14730 -1510Q14874 -1510 14986 -1458Q15098 -1407 15164 -1318Q15230 -1230 15234 -1118H15058Q15045 -1228 14953 -1289Q14860 -1350 14724 -1350Q14626 -1350 14552 -1318Q14478 -1286 14437 -1230Q14396 -1174 14396 -1102Q14396 -1023 14445 -974Q14494 -926 14562 -899Q14629 -872 14684 -856L14834 -814Q14892 -798 14964 -771Q15035 -744 15102 -698Q15168 -652 15211 -580Q15254 -509 15254 -404Q15254 -284 15191 -186Q15128 -89 15008 -32Q14888 26 14716 26Z"/>
+          </g>
+        </svg>
+      </a>
+      <a class="rodape__subir" href="#inicio" aria-label="Voltar ao início"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 19V5m-7 7 7-7 7 7"/></svg></a>
+    </div>
+    <div class="rodape__base">
+      <span>Mooca · São Paulo</span>
+      <span>© 2026 Nazzan<span class="pend" data-pend> · [Razão social] · CNPJ [00.000.000/0000-00]</span></span>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ FIXOS ============ -->
+<a class="wa-flutua" href="https://wa.me/5511992478221" target="_blank" rel="noopener" aria-label="Falar com a Nazzan no WhatsApp" data-wa data-wa-flutua>
+  <svg><use href="#whatsapp"/></svg><span>Falar com a Nazzan</span>
+</a>
+<div class="barra-movel" data-barra>
+  <a class="barra-movel__wa" href="https://wa.me/5511992478221" target="_blank" rel="noopener" aria-label="WhatsApp" data-wa><svg><use href="#whatsapp"/></svg></a>
+</div>
+
+<button type="button" class="revisao-btn so-revisao" data-revisao-btn>Ver versão limpa</button>
+
+<script src="js/site-9a1f3899dad6.min.js" defer></script>
+</body>
+</html>

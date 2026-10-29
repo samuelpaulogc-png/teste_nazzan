@@ -1,0 +1,115 @@
+/* ---------- 8. Arquitetos (23/10/2026) ----------
+   A opção D de prototypes/arquitetos-opcoes.html, aprovada pelo usuário: o estudo do Codex
+   (prototypes/arquitetos-01.html, classes arq-estudio__*), com três mudanças do Claude a pedido do usuário:
+   - sem a faixa de baixo ("Sem projeto?" / "Desenvolvemos com você."); no lugar, o botão "Desenvolver meu
+     projeto" abaixo de "Sou arquiteto(a)", da mesma largura, com o círculo só de filete (aq-d__*);
+   - a cômoda do desenho se forma quando aparece (js/arquitetos.js);
+   - o desenho aparece também no celular (o estudo o escondia até 600px).
+   Os valores do Codex estão como no estudo, menos a fonte local (aqui vale a Inter Tight da landing).
+   Reserva da seção antiga: arquivo/_copias/antes-arquitetos-d-2026-10-23/ */
+.arq-estudio {
+  background: var(--verde);
+  color: var(--creme);
+  padding-block: clamp(64px, 6.5vw, 104px) 0;
+  scroll-margin-top: 88px;
+}
+.arq-estudio__miolo {
+  max-width: var(--max);
+  padding-inline: var(--g);
+  margin-inline: auto;
+}
+.arq-estudio__principal {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+  gap: clamp(40px, 8vw, 116px);
+  align-items: center;
+  padding-bottom: clamp(48px, 5vw, 72px);
+}
+.arq-estudio__titulo {
+  max-width: 15ch;
+  font-size: clamp(38px, 4.3vw, 64px);
+  font-weight: 400;
+  line-height: 1.04;
+  letter-spacing: -.045em;
+}
+.arq-estudio__titulo span { display: block; color: rgba(253,249,244,.64); }
+.arq-estudio__apoio {
+  max-width: 39ch;
+  margin-top: 28px;
+  font-size: 17px;
+  line-height: 1.55;
+  color: rgba(253,249,244,.8);
+  text-wrap: pretty;
+}
+.arq-estudio__convite {
+  display: inline-flex;
+  align-items: center;
+  gap: 32px;
+  min-height: 52px;
+  margin-top: 32px;
+  padding: 6px 6px 6px 22px;
+  border: 1px solid rgba(253,249,244,.32);
+  border-radius: 40px;
+  background: rgba(253,249,244,.035);
+  font-size: 14px;
+  line-height: 1.35;
+  color: var(--creme);
+  transition: background-color 200ms ease, border-color 200ms ease, transform 160ms ease;
+}
+.arq-estudio__circulo { width: 38px; height: 38px; flex: 0 0 38px; display: grid; place-items: center; border-radius: 50%; background: var(--ouro); color: var(--grafite); }
+.arq-estudio__circulo svg { width: 14px; height: 14px; transition: transform 200ms var(--ease); }
+/* Esboço conceitual, sem medidas, marcas ou alegação de projeto executado. */
+.arq-estudio__desenho { position: relative; padding: 16px 0; color: var(--creme); }
+.arq-estudio__desenho::before { content: ''; position: absolute; inset: 0; background: linear-gradient(145deg, rgba(253,249,244,.025), transparent 65%); border-top: 1px solid rgba(253,249,244,.14); border-bottom: 1px solid rgba(253,249,244,.14); pointer-events: none; }
+.arq-estudio__desenho svg { width: 100%; height: auto; overflow: visible; }
+.arq-estudio__desenho .estrutura { stroke: currentColor; stroke-opacity: .58; stroke-width: 1.1; stroke-linecap: round; stroke-linejoin: round; fill: none; }
+.arq-estudio__desenho .auxiliar { stroke: currentColor; stroke-opacity: .15; stroke-width: .75; fill: none; }
+.arq-estudio__desenho .detalhe { stroke: var(--ouro); stroke-width: 1.35; fill: none; }
+.arq-estudio__desenho .face { fill: rgba(253,249,244,.025); stroke: none; }
+.arq-estudio a:focus-visible { outline: 2px solid var(--creme); outline-offset: 6px; }
+.arq-estudio__convite:active { transform: scale(.98); }
+@media (hover: hover) and (pointer: fine) {
+  .arq-estudio__convite:hover { border-color: rgba(253,249,244,.65); background: rgba(253,249,244,.09); }
+  .arq-estudio__convite:hover svg { transform: translateX(3px); }
+}
+
+/* Os dois botões, sem a faixa de baixo: empilhados, com 12px entre eles. A coluna tem a largura do botão mais
+   largo, e os dois a ocupam (mesma largura, seta na ponta). "Desenvolver meu projeto" é a mesma pílula, com o
+   círculo só de filete, que se enche de creme no hover. A seção ganha embaixo o mesmo respiro de cima. */
+.arq-estudio.aq-d { padding-bottom: clamp(64px, 6.5vw, 104px); }
+.aq-d .arq-estudio__principal { padding-bottom: 0; }
+.aq-d__acoes { display: flex; flex-direction: column; gap: 12px; width: max-content; margin-top: 32px; }
+.aq-d__acoes .arq-estudio__convite { justify-content: space-between; margin-top: 0; }
+.aq-d__sem { background: transparent; }
+.aq-d__sem .arq-estudio__circulo { background: transparent; border: 1px solid rgba(253, 249, 244, .4); color: var(--creme); transition: background-color .25s var(--ease), border-color .25s var(--ease), color .25s var(--ease); }
+@media (hover: hover) and (pointer: fine) {
+  .aq-d__sem:hover .arq-estudio__circulo { background: var(--creme); border-color: var(--creme); color: var(--grafite); }
+}
+
+/* A cômoda se formando: só o estado de partida; a animação está no js/arquitetos.js.
+   Sem JS ou com movimento reduzido (is-formado), ela aparece pronta. */
+.js [data-aq-forma] [pathLength] { stroke-dasharray: 1; stroke-dashoffset: 1; }
+.js [data-aq-forma] .face, .js [data-aq-forma] .aq-gaveta { opacity: 0; }
+.js [data-aq-forma].is-formado [pathLength] { stroke-dashoffset: 0; }
+.js [data-aq-forma].is-formado .face, .js [data-aq-forma].is-formado .aq-gaveta { opacity: 1; }
+
+@media (max-width: 900px) {
+  .arq-estudio__principal { grid-template-columns: minmax(0,1.2fr) minmax(0,1fr); gap: 32px; }
+  .arq-estudio__titulo { font-size: 42px; }
+  .arq-estudio__apoio { font-size: 16px; }
+}
+@media (max-width: 600px) {
+  .arq-estudio { padding-top: 52px; }
+  .arq-estudio.aq-d { padding-bottom: 52px; }
+  .arq-estudio__principal { grid-template-columns: minmax(0,1fr); gap: 0; }
+  .arq-estudio__titulo { font-size: clamp(34px, 9.7vw, 44px); line-height: 1.06; letter-spacing: -.04em; }
+  .arq-estudio__apoio { max-width: 35ch; margin-top: 24px; }
+  .aq-d__acoes { margin-top: 26px; }
+  /* O desenho embaixo do texto, sem o filete de baixo */
+  .arq-estudio__desenho { margin-top: 40px; padding: 12px 0; }
+  .arq-estudio__desenho::before { border-bottom: 0; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .arq-estudio a, .arq-estudio a svg, .aq-d__sem .arq-estudio__circulo { transition: none; }
+  .arq-estudio__convite:active, .arq-estudio__convite:hover svg { transform: none; }
+}
